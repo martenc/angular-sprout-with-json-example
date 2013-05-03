@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en" ng-app="injusticeApp">
+<head>
+  <meta charset="utf-8">
+  <title>Injustice Battle Arena - Victory Page</title>
+  <link rel="stylesheet" href="css/index.css"/>
+  <script lang="javascript">
+  function goToBioPage() {
+    if(document.getElementById('target').value){
+        window.location.href = document.getElementById('target').value;
+    }
+}
+  </script>
+</head>
+<body>
+  <div ng-view></div>
+
+
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script>
+  <!-- <script src="lib/angular/angular.js"></script> -->
+  <script src="js/app.js"></script>
+  <script src="js/services.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/directives.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="lib/angular/angular-resource.js"></script>
+
+</body>
+</html>

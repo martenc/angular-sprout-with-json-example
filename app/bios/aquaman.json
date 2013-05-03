@@ -1,0 +1,17 @@
+{
+    "name": "AQUAMAN",
+    "bio_name": "Arthur Curry",
+    "bio_race": "Half-Atlantean, half-human",
+    "bio_abilities": {
+    	"ability": [
+			"Super-human strength, agility, athleticism, durability",
+			"Can breathe underwater; lightning-fast swimmer",
+			"Telepathy; ability to communicate with sea creatures",
+			"Can control large bodies of water",
+			"Magic-based weaponry"
+    		]
+    	},    
+    "bio_url": "http:\/\/www.dccomics.com\/characters\/aquaman",
+    "bio_image_big": "https:\/\/s3-us-west-1.amazonaws.com\/injustice-cdn\/victorypage\/aquaman-big.png",
+    "bio_download": "https:\/\/s3-us-west-1.amazonaws.com\/injustice-cdn\/victorypage\/aquaman-en.jpg"
+}

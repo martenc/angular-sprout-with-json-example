@@ -1,0 +1,130 @@
+/* ENGLISH */
+/* line 5, ../../../app/assets/styles/localized.scss */
+body#en-US .dialog-rewards-wrapper .dialog-main .reward-prev-1 .right {
+  background: transparent url(../images/rewards/heroes-reward.jpg) 2px 210px no-repeat;
+}
+/* line 8, ../../../app/assets/styles/localized.scss */
+body#en-US #slide-5 {
+  background: transparent url(../images/rewards/heroes-reward.jpg) 245px 154px no-repeat;
+}
+
+/* ENGLISH */
+/* line 17, ../../../app/assets/styles/localized.scss */
+body#en-AU .dialog-rewards-wrapper .dialog-main .reward-prev-1 .right {
+  background: url("../images/rewards/rewards-au.png") -3px bottom no-repeat;
+}
+/* line 21, ../../../app/assets/styles/localized.scss */
+body#en-AU #slide-5 {
+  background: url("../images/rewards/rewards-au.png") 245px 154px no-repeat;
+}
+
+/* FRENCH */
+/* line 30, ../../../app/assets/styles/localized.scss */
+body#fr-FR .dialog-rewards-wrapper .dialog-header .dialog-title {
+  font: normal 23px/41px interstateregular;
+}
+/* line 34, ../../../app/assets/styles/localized.scss */
+body#fr-FR .dialog-rewards-wrapper .preorder {
+  font: normal 10px/47px interstateregular;
+}
+/* line 38, ../../../app/assets/styles/localized.scss */
+body#fr-FR section.fight .fight-comments .comments-body h3.comments-header {
+  font-size: 16px;
+}
+/* line 42, ../../../app/assets/styles/localized.scss */
+body#fr-FR .main-nav .nav .preorder-btn {
+  font-size: 10px;
+  margin-left: -13px;
+}
+/* line 47, ../../../app/assets/styles/localized.scss */
+body#fr-FR section.fight .viewbio-btn span {
+  margin-top: -6px;
+}
+/* line 51, ../../../app/assets/styles/localized.scss */
+body#fr-FR section.fight .vote-btn span {
+  padding-right: 10px;
+  margin-left: -10px;
+  font-size: 38px;
+  line-height: 49px;
+}
+/* line 57, ../../../app/assets/styles/localized.scss */
+body#fr-FR .top-nav .help-text p {
+  font-size: 10px;
+  margin-top: -4px;
+}
+/* line 62, ../../../app/assets/styles/localized.scss */
+body#fr-FR .vote-share-box .vote-box section.share-vote .char-text {
+  font-size: 13px;
+  margin-top: 8px;
+}
+/* line 67, ../../../app/assets/styles/localized.scss */
+body#fr-FR section.fight .viewbio-btn {
+  font-size: 12px;
+}
+
+/* RUSSIAN */
+/* line 76, ../../../app/assets/styles/localized.scss */
+body#ru-RU .main-nav .nav hgroup.voting-countdown h2 {
+  width: 156px;
+  font-size: 10px;
+  margin-top: -8px;
+}
+/* line 82, ../../../app/assets/styles/localized.scss */
+body#ru-RU #dialog-wrapper .main-gradient-text {
+  font-size: 28px;
+}
+/* line 86, ../../../app/assets/styles/localized.scss */
+body#ru-RU section.fight .vote-btn span {
+  font-size: 28px;
+  margin-left: -20px;
+  padding-right: 20px;
+  line-height: 47px;
+}
+/* line 92, ../../../app/assets/styles/localized.scss */
+body#ru-RU .dialog-rewards-wrapper .preorder {
+  font-size: 11px;
+}
+
+/* SPANISH */
+/* line 100, ../../../app/assets/styles/localized.scss */
+body#es-MX .dialog-rewards-wrapper .dialog-header .dialog-title {
+  font: normal 22px/39px interstateregular;
+}
+/* line 104, ../../../app/assets/styles/localized.scss */
+body#es-MX .main-nav .nav hgroup.voting-countdown h2 {
+  width: 138px;
+  margin-top: -7px;
+}
+/* line 109, ../../../app/assets/styles/localized.scss */
+body#es-MX section.fight .vote-btn span {
+  padding-right: 10px;
+  margin-left: -10px;
+  font-size: 38px;
+  line-height: 49px;
+}
+
+/* PORTUGAL */
+/* line 120, ../../../app/assets/styles/localized.scss */
+body#pt-BR .dialog-rewards-wrapper .dialog-header .dialog-title {
+  font: normal 20px/39px interstateregular;
+}
+/* line 124, ../../../app/assets/styles/localized.scss */
+body#pt-BR .main-nav .nav hgroup.voting-countdown h2 {
+  width: 140px;
+  margin-top: -7px;
+}
+/* line 129, ../../../app/assets/styles/localized.scss */
+body#pt-BR section.fight .vote-btn span {
+  padding-right: 10px;
+  margin-left: -10px;
+  font-size: 38px;
+  line-height: 49px;
+}
+/* line 136, ../../../app/assets/styles/localized.scss */
+body#pt-BR .dialog-rewards-wrapper .dialog-main .reward-prev-1 .right {
+  background: url("../images/rewards/rewards-br.png") -3px bottom no-repeat;
+}
+/* line 140, ../../../app/assets/styles/localized.scss */
+body#pt-BR #slide-5 {
+  background: url("../images/rewards/rewards-br.png") 245px 154px no-repeat;
+}

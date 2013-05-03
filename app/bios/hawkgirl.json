@@ -1,0 +1,15 @@
+{
+    "name": "HAWKGIRL",
+    "bio_name": "Shiera Hall",
+    "bio_race": "Human",
+    "bio_abilities": {
+    	"ability": [
+			"Nth Metal wings and weapons provide powers of flight",
+			"Super-strength",
+			"Enhanced vision"
+    		]
+    	},
+    "bio_url": "http:\/\/www.dccomics.com\/characters\/hawkgirl",
+    "bio_image_big": "https:\/\/s3-us-west-1.amazonaws.com\/injustice-cdn\/victorypage\/hawkgirl-big.png",
+    "bio_download": "https:\/\/s3-us-west-1.amazonaws.com\/injustice-cdn\/victorypage\/hawkgirl-en.jpg"
+}

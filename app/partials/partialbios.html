@@ -1,0 +1,48 @@
+
+<div id="dialog-wrapper" class="dialog-overlay">
+        <div class="dialog-header">
+            <a href="" title="" class="dialog-close"><span><em>X</em> Close</span></a>
+            <div class="clear"></div>
+        </div>
+        <div class="dialog-profile-main">
+                    <div class="profile-cont">
+                        <h2 class="panel-title">FIGHTER PROFILE</h2>
+                        <img class="panel-title" src="https://s3-us-west-1.amazonaws.com/injustice-cdn/victorypage/fighter-profile.png">
+                        <img ng-src="{{character.bio_image_big}}" class="profile-img">
+                        <div class="profile-info-wrapper">
+                            <div class="bane-info">
+                                <h3>{{character.name}}</h3>
+                                <p>REAL NAME: <span>{{character.bio_name}}</span></p>
+                                <p>RACE: <span>{{character.bio_race}}</span></p>
+                            </div>
+                            
+                            <div class="abilities-info">
+                                <h3>ABILITIES</h3>
+                                <ul>
+                                    <li ng-repeat="abi in character.bio_abilities.ability">
+                                        {{abi}}
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="more-info-wrapper">
+                                FOR MORE INFO: : <a href="{{character.bio_url}}" title="" target="_blank">{{character.bio_url}}</a>
+                            </div>
+                            <div class="bracket-footer">
+                        <a href="{{character.bio_download}}" target="_blank" title="" class="download"><span class="arrow"></span>DOWNLOAD THIS CARD</a>
+                        
+                        <!-- <a href="" title="" class="share">
+                            <img src="https://s3-us-west-1.amazonaws.com/injustice-cdn/victorypage/social-facebook.png" alt="facebook">
+                        </a>
+
+                        <a href="" title="" class="tweet">
+                            <img src="https://s3-us-west-1.amazonaws.com/injustice-cdn/victorypage/social-twitter.png" alt="twitter">
+                        </a> -->
+                        
+                    </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+</div>
+All characters are © 2013 DC Comics and All rights reserved by A Warner Bros. Entertainment Company<br>

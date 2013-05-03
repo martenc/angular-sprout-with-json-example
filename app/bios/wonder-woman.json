@@ -1,0 +1,17 @@
+{
+    "name": "WONDER WOMAN",
+    "bio_name": "Diana, Princess of Themyscira",
+    "bio_race": "Amazon",
+    "bio_abilities": {
+    	"ability": [
+			"Super-human strength, speed and endurance",
+			"Superior fighting skills and multiple weapon proficiency",
+			"Flight",
+			"Magic-based weapons like her Lasso of Truth",
+			"Godlike longevity"
+    		]
+    	},
+    "bio_url": "http:\/\/www.dccomics.com\/characters\/wonder-woman",
+    "bio_image_big": "https:\/\/s3-us-west-1.amazonaws.com\/injustice-cdn\/victorypage\/wonderwoman-big.png",
+    "bio_download": "https:\/\/s3-us-west-1.amazonaws.com\/injustice-cdn\/victorypage\/wonderwoman-en.jpg"
+}

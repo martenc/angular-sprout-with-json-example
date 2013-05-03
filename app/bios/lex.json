@@ -1,0 +1,14 @@
+{
+    "name": "LEX",
+    "bio_name": "Lex Luthor",
+    "bio_race": "Human",
+    "bio_abilities": {
+    	"ability": [
+			"Genius-level intellect",
+			"Billionaire inventor, technician, politician"
+    		]
+    	},
+    "bio_url": "http:\/\/www.dccomics.com\/characters\/lex-luthor",
+    "bio_image_big": "https:\/\/s3-us-west-1.amazonaws.com\/injustice-cdn\/victorypage\/lex-big.png",
+    "bio_download": "https:\/\/s3-us-west-1.amazonaws.com\/injustice-cdn\/victorypage\/lex-en.jpg"
+}

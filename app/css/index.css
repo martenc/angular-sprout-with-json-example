@@ -1,0 +1,1303 @@
+@import url(h5bp.css);
+@import url(modals.css);
+@import url(localized.css);
+/**
+ * Mixins
+ * 
+ */
+/* Fonts */
+@font-face {
+  font-family: 'interstateregular';
+  src: url("https://s3-us-west-1.amazonaws.com/injustice-cdn/victorypage/fonts/interstate_bold-webfont.eot");
+  src: url("https://s3-us-west-1.amazonaws.com/injustice-cdn/victorypage/fonts/interstate_bold-webfont.eot?#iefix") format("embedded-opentype"), url("https://s3-us-west-1.amazonaws.com/injustice-cdn/victorypage/fonts/interstate_bold-webfont.woff") format("woff"), url("https://s3-us-west-1.amazonaws.com/injustice-cdn/victorypage/fonts/interstate_bold-webfont.ttf") format("truetype"), url("https://s3-us-west-1.amazonaws.com/injustice-cdn/victorypage/fonts/interstate_bold-webfont.svg#interstateregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 20, ../../../app/assets/styles/index.scss */
+body.loaded {
+  background: black url("../images/frame.jpg") center top no-repeat;
+}
+
+/* line 25, ../../../app/assets/styles/index.scss */
+#breadcrumbs {
+  display: block;
+  width: 795px;
+  height: 28px;
+  text-decoration: none;
+  margin: 0 auto;
+  background: url("../images/dc-header.jpg") no-repeat;
+}
+/* line 33, ../../../app/assets/styles/index.scss */
+#breadcrumbs a {
+  text-decoration: none;
+}
+/* line 36, ../../../app/assets/styles/index.scss */
+#breadcrumbs a#dc-link {
+  float: left;
+  padding-left: 30px;
+}
+/* line 41, ../../../app/assets/styles/index.scss */
+#breadcrumbs a#injustice-link {
+  float: right;
+  padding-right: 130px;
+}
+/* line 46, ../../../app/assets/styles/index.scss */
+#breadcrumbs a span {
+  font-family: 'interstateregular';
+  font-size: 11px;
+  color: #AC7713;
+  background: -webkit-linear-gradient(#e9cf00, #b58400);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: block;
+  padding-top: 7px;
+}
+
+/* line 55, ../../../app/assets/styles/index.scss */
+.container {
+  width: 795px;
+  height: 650px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+/* line 62, ../../../app/assets/styles/index.scss */
+.container.loaded {
+  background: url("../images/background.jpg");
+}
+/* line 66, ../../../app/assets/styles/index.scss */
+.container h1 {
+  margin: 0;
+}
+
+/* line 71, ../../../app/assets/styles/index.scss */
+.ajax-loader {
+  position: absolute;
+  width: 795px;
+  height: 650px;
+  background: #000;
+  background: black;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  opacity: 1;
+  display: none;
+}
+/* line 82, ../../../app/assets/styles/index.scss */
+.ajax-loader span {
+  width: 32px;
+  height: 32px;
+  background: url("../images/ajax-loader.gif") no-repeat;
+  position: absolute;
+  top: 300px;
+  left: 400px;
+  z-index: 110;
+}
+
+/* line 93, ../../../app/assets/styles/index.scss */
+.hover-popup {
+  position: absolute;
+  z-index: 1;
+  width: 100px;
+  padding: 10px;
+  background: #000;
+  border: solid 1px #ccc;
+  color: #fff !important;
+  font-size: 11px !important;
+}
+
+/* line 104, ../../../app/assets/styles/index.scss */
+.top-nav {
+  width: 795px;
+  height: 60px;
+  background: url("../images/top-nav.png");
+  position: absolute;
+  top: -60px;
+  left: 0px;
+  z-index: 25;
+}
+/* line 113, ../../../app/assets/styles/index.scss */
+.top-nav .bracket {
+  width: 46px;
+  height: 60px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+}
+/* line 122, ../../../app/assets/styles/index.scss */
+.top-nav .share-page {
+  width: 100px;
+  position: absolute;
+  left: 50px;
+  top: 5px;
+  font-family: 'interstateregular';
+  color: #9eb4c1;
+  font-size: 12px;
+  text-align: center;
+  cursor: pointer;
+}
+/* line 134, ../../../app/assets/styles/index.scss */
+.top-nav .help-text {
+  position: absolute;
+  left: 170px;
+  top: 5px;
+  width: 500px;
+}
+/* line 140, ../../../app/assets/styles/index.scss */
+.top-nav .help-text p {
+  margin: 0;
+  padding: 0;
+  font-size: 11px;
+  color: #cecece;
+  font-weight: normal;
+  font-family: Helvetica, Verdana, Arial;
+}
+/* line 151, ../../../app/assets/styles/index.scss */
+.top-nav .twitter-link,
+.top-nav .facebook-link {
+  width: 20px;
+  height: 27px;
+  position: absolute;
+  cursor: pointer;
+}
+/* line 157, ../../../app/assets/styles/index.scss */
+.top-nav .twitter-link {
+  left: 695px;
+}
+/* line 160, ../../../app/assets/styles/index.scss */
+.top-nav .facebook-link {
+  left: 729px;
+}
+/* line 164, ../../../app/assets/styles/index.scss */
+.top-nav .region-select {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 762px;
+  top: 4px;
+  cursor: pointer;
+}
+
+/* line 174, ../../../app/assets/styles/index.scss */
+.main-nav {
+  position: absolute;
+  bottom: -72px;
+  z-index: 12;
+}
+/* line 179, ../../../app/assets/styles/index.scss */
+.main-nav .nav {
+  width: 795px;
+  height: 40px;
+  background: url("../images/main-nav-bg.jpg");
+  position: absolute;
+  bottom: 0px;
+  z-index: 12;
+}
+/* line 187, ../../../app/assets/styles/index.scss */
+.main-nav .nav hgroup.voting-countdown {
+  position: absolute;
+  top: 15px;
+}
+/* line 191, ../../../app/assets/styles/index.scss */
+.main-nav .nav hgroup.voting-countdown h2 {
+  float: left;
+  margin: 0px;
+  letter-spacing: -0.1em;
+  margin-right: 3px;
+  font-family: 'interstateregular';
+  font-size: 11px;
+  color: #AC7713;
+  background: -webkit-linear-gradient(#e9cf00, #b58400);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* line 199, ../../../app/assets/styles/index.scss */
+.main-nav .nav hgroup.voting-countdown h3 {
+  float: left;
+  margin: 0px;
+  margin-top: -3px;
+  font-family: Helvetica, Arial, Verdana;
+  font-size: 17px;
+  color: #7d7d7d;
+  font-weight: normal;
+  font-style: italic;
+}
+/* line 211, ../../../app/assets/styles/index.scss */
+.main-nav .nav .go-home {
+  width: 13px;
+  height: 14px;
+  background: url("../images/home-ico.png");
+  position: absolute;
+  left: 355px;
+  top: 14px;
+  cursor: pointer;
+}
+/* line 221, ../../../app/assets/styles/index.scss */
+.main-nav .nav .super-fights {
+  position: absolute;
+  left: 445px;
+  top: 11px;
+}
+/* line 228, ../../../app/assets/styles/index.scss */
+.main-nav .nav .super-fights ul li {
+  float: left;
+  padding: 2px 5px;
+  font-family: 'Myriad Pro', Helvetica, Arial, Verdana;
+  font-size: 16px;
+  color: #373737;
+  cursor: default;
+}
+/* line 236, ../../../app/assets/styles/index.scss */
+.main-nav .nav .super-fights ul li.hvr-pop {
+  cursor: pointer;
+}
+/* line 240, ../../../app/assets/styles/index.scss */
+.main-nav .nav .super-fights ul li.enabled {
+  color: #999;
+}
+/* line 244, ../../../app/assets/styles/index.scss */
+.main-nav .nav .super-fights ul li.current {
+  color: #b8951b;
+}
+/* line 248, ../../../app/assets/styles/index.scss */
+.main-nav .nav .super-fights ul li.hvr-pop:hover {
+  color: #fff;
+}
+/* line 255, ../../../app/assets/styles/index.scss */
+.main-nav .nav .fb-like {
+  top: 12px;
+  left: 260px;
+  overflow: hidden;
+}
+/* line 261, ../../../app/assets/styles/index.scss */
+.main-nav .nav .preorder-btn {
+  width: 75px;
+  height: 30px;
+  position: absolute;
+  left: 632px;
+  top: 14px;
+  cursor: pointer;
+  color: #AC7713;
+  font-family: 'interstateregular';
+  /*@include gradient-text();*/
+}
+/* line 274, ../../../app/assets/styles/index.scss */
+.main-nav .nav .rewards-btn {
+  width: 79px;
+  height: 38px;
+  position: absolute;
+  left: 695px;
+  top: 2px;
+  background: url("../images/reward-btn.png") no-repeat;
+  cursor: pointer;
+}
+/* line 284, ../../../app/assets/styles/index.scss */
+.main-nav .nav .help-btn {
+  position: absolute;
+  left: 778px;
+  top: 10px;
+  cursor: pointer;
+  color: #AC7713;
+  font-size: 16px;
+  font-family: 'interstateregular';
+  /*@include gradient-text(16px);*/
+}
+/* line 297, ../../../app/assets/styles/index.scss */
+.main-nav .rubble {
+  width: 795px;
+  height: 72px;
+  background: url("../images/rubble.png");
+  position: absolute;
+  bottom: 0px;
+  z-index: 10;
+}
+
+/* line 310, ../../../app/assets/styles/index.scss */
+section.home .content {
+  position: absolute;
+  top: -500px;
+  left: 35px;
+  z-index: 20;
+}
+/* line 316, ../../../app/assets/styles/index.scss */
+section.home .content .logo {
+  width: 339px;
+  height: 106px;
+  background: url("../images/logo.png");
+  margin-left: -20px;
+}
+/* line 323, ../../../app/assets/styles/index.scss */
+section.home .content .video {
+  width: 308px;
+  height: 174px;
+  background: url("../images/trailer.png");
+}
+/* line 329, ../../../app/assets/styles/index.scss */
+section.home .content .video-info {
+  width: 250px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  color: #b3c6cf;
+}
+/* line 339, ../../../app/assets/styles/index.scss */
+section.home .characters {
+  width: 795px;
+  height: 624px;
+  background: url("../images/characters.png");
+  position: absolute;
+  right: -795px;
+  bottom: -300px;
+}
+/* line 348, ../../../app/assets/styles/index.scss */
+section.home .triangle {
+  width: 454px;
+  height: 488px;
+  background: url("../images/triangle.png");
+  position: absolute;
+  right: -400px;
+  bottom: -60px;
+}
+/* line 356, ../../../app/assets/styles/index.scss */
+section.home .triangle span {
+  display: block;
+  cursor: pointer;
+  width: 276px;
+  height: 237px;
+  position: absolute;
+  bottom: 110px;
+  right: 10px;
+}
+
+/* line 372, ../../../app/assets/styles/index.scss */
+section.tournaments .fightVideo {
+  width: 409px;
+  height: 254px;
+  padding: 13px;
+  background: url("../images/superfight1-video.png") no-repeat;
+  position: absolute;
+  bottom: -300px;
+  left: 37px;
+}
+/* line 382, ../../../app/assets/styles/index.scss */
+section.tournaments .seriesPlaylist {
+  padding: 0;
+  margin: 20px 0 0;
+  position: absolute;
+  left: -300px;
+  top: 268px;
+  z-index: 20;
+}
+/* line 390, ../../../app/assets/styles/index.scss */
+section.tournaments .seriesPlaylist ul {
+  margin: 0;
+  padding: 0;
+}
+/* line 394, ../../../app/assets/styles/index.scss */
+section.tournaments .seriesPlaylist ul li {
+  float: left;
+  list-style-type: none;
+  margin-right: 10px;
+}
+/* line 399, ../../../app/assets/styles/index.scss */
+section.tournaments .seriesPlaylist ul li a {
+  display: block;
+}
+/* line 402, ../../../app/assets/styles/index.scss */
+section.tournaments .seriesPlaylist ul li a img {
+  width: 60px;
+  height: 50px;
+}
+/* line 411, ../../../app/assets/styles/index.scss */
+section.tournaments .fightLogo {
+  width: 486px;
+  height: 345px;
+  position: absolute;
+  bottom: -300px;
+}
+/* line 417, ../../../app/assets/styles/index.scss */
+section.tournaments .fightLogo#superfight1-logo {
+  background: url("../images/superfight1-logo.png");
+}
+/* line 420, ../../../app/assets/styles/index.scss */
+section.tournaments .fightLogo#superfight2-logo {
+  background: url("../images/superfight2-logo.png");
+}
+/* line 423, ../../../app/assets/styles/index.scss */
+section.tournaments .fightLogo#superfight3-logo {
+  background: url("../images/superfight3-logo.png");
+}
+/* line 426, ../../../app/assets/styles/index.scss */
+section.tournaments .fightLogo#superfight4-logo {
+  background: url("../images/superfight4-logo.png");
+}
+/* line 429, ../../../app/assets/styles/index.scss */
+section.tournaments .fightLogo#quarterfinals-logo {
+  background: url("../images/quarterfinals-logo.png");
+}
+/* line 431, ../../../app/assets/styles/index.scss */
+section.tournaments .fightLogo#quarterfinals-logo .fight1-btn {
+  top: 160px;
+}
+/* line 434, ../../../app/assets/styles/index.scss */
+section.tournaments .fightLogo#quarterfinals-logo .fight2-btn {
+  top: 160px;
+}
+/* line 437, ../../../app/assets/styles/index.scss */
+section.tournaments .fightLogo#quarterfinals-logo .fight3-btn {
+  top: 240px;
+}
+/* line 440, ../../../app/assets/styles/index.scss */
+section.tournaments .fightLogo#quarterfinals-logo .fight4-btn {
+  top: 240px;
+  left: 250px;
+}
+/* line 445, ../../../app/assets/styles/index.scss */
+section.tournaments .fightLogo#semifinals-logo {
+  background: url("../images/semifinals-logo.png");
+}
+/* line 448, ../../../app/assets/styles/index.scss */
+section.tournaments .fightLogo#finals-logo {
+  background: url("../images/finals-logo.png");
+}
+/* line 452, ../../../app/assets/styles/index.scss */
+section.tournaments .fightLogo .fight-btn {
+  display: block;
+  width: 176px;
+  height: 62px;
+  padding: 8px 10px 10px;
+  background: url("../images/match-plate-bg.png");
+  text-decoration: none;
+  text-align: center;
+  position: absolute;
+  left: 25px;
+  top: 225px;
+}
+/* line 464, ../../../app/assets/styles/index.scss */
+section.tournaments .fightLogo .fight-btn.fight2-btn {
+  left: 250px;
+}
+/* line 468, ../../../app/assets/styles/index.scss */
+section.tournaments .fightLogo .fight-btn h2 {
+  color: #9c9c9c;
+  font-family: 'interstateregular';
+  font-size: 35px;
+  margin: 0;
+}
+/* line 475, ../../../app/assets/styles/index.scss */
+section.tournaments .fightLogo .fight-btn span {
+  color: #9c9c9c;
+  font-family: 'interstateregular';
+  font-size: 10px;
+}
+/* line 480, ../../../app/assets/styles/index.scss */
+section.tournaments .fightLogo .fight-btn span small {
+  font-size: 8px;
+}
+/* line 488, ../../../app/assets/styles/index.scss */
+section.tournaments .comments {
+  width: 308px;
+  height: 545px;
+  background: url("../images/hype-comments-bg.png") no-repeat;
+  position: absolute;
+  bottom: -500px;
+  left: 455px;
+  overflow: hidden;
+}
+/* line 497, ../../../app/assets/styles/index.scss */
+section.tournaments .comments h3.comments-header {
+  font-family: 'interstateregular';
+  font-size: 20px;
+  color: #80919c;
+  text-align: center;
+  padding: 20px 5px;
+  margin: 0px;
+}
+/* line 506, ../../../app/assets/styles/index.scss */
+section.tournaments .comments iframe {
+  width: 286px;
+  height: 485px;
+  margin-left: 11px;
+  border: none;
+}
+/* line 515, ../../../app/assets/styles/index.scss */
+section.tournaments .hype-arrow-right {
+  visibility: visible;
+  width: 26px;
+  height: 85px;
+  position: absolute;
+  top: 250px;
+  background: url("../images/page-arrow-right.png") no-repeat;
+  right: 5px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+/* line 530, ../../../app/assets/styles/index.scss */
+section.fight h1 {
+  padding-top: 100px;
+  text-align: center;
+}
+/* line 536, ../../../app/assets/styles/index.scss */
+section.fight .fight-characters {
+  width: 795px;
+  height: 522px;
+  position: absolute;
+  bottom: 0px;
+  z-index: 8;
+}
+/* line 543, ../../../app/assets/styles/index.scss */
+section.fight .fight-characters .character-one {
+  width: 450px;
+  height: 550px;
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  background-repeat: no-repeat;
+}
+/* line 552, ../../../app/assets/styles/index.scss */
+section.fight .fight-characters .character-two {
+  width: 450px;
+  height: 550px;
+  position: absolute;
+  bottom: 0;
+  right: 0px;
+  background-repeat: no-repeat;
+}
+/* line 562, ../../../app/assets/styles/index.scss */
+section.fight .fight-comments {
+  width: 308px;
+  height: 682px;
+  position: absolute;
+  bottom: -700px;
+  left: 250px;
+  overflow: hidden;
+  z-index: 9;
+}
+/* line 571, ../../../app/assets/styles/index.scss */
+section.fight .fight-comments .comments-head {
+  position: relative;
+}
+/* line 575, ../../../app/assets/styles/index.scss */
+section.fight .fight-comments .comments-body {
+  position: relative;
+  width: 308px;
+  height: 545px;
+  background: url("../images/match-comments-bg.png");
+}
+/* line 581, ../../../app/assets/styles/index.scss */
+section.fight .fight-comments .comments-body h3.comments-header {
+  font-family: 'interstateregular';
+  font-size: 21px;
+  color: #80919c;
+  text-align: center;
+  padding: 20px 5px;
+  margin: 0px;
+}
+/* line 591, ../../../app/assets/styles/index.scss */
+section.fight .fight-comments .superfight-logo {
+  width: 243px;
+  height: 159px;
+}
+/* line 596, ../../../app/assets/styles/index.scss */
+section.fight .fight-comments#superfight1-comments .superfight-logo {
+  background: url("../images/superfight1-match-logo.png") no-repeat;
+}
+/* line 599, ../../../app/assets/styles/index.scss */
+section.fight .fight-comments#superfight2-comments .superfight-logo {
+  background: url("../images/superfight2-match-logo.png") no-repeat;
+}
+/* line 602, ../../../app/assets/styles/index.scss */
+section.fight .fight-comments#superfight3-comments .superfight-logo {
+  background: url("../images/superfight3-match-logo.png") no-repeat;
+}
+/* line 605, ../../../app/assets/styles/index.scss */
+section.fight .fight-comments#superfight4-comments .superfight-logo {
+  background: url("../images/superfight4-match-logo.png") no-repeat;
+}
+/* line 608, ../../../app/assets/styles/index.scss */
+section.fight .fight-comments#quarterfinals-comments .superfight-logo {
+  background: url("../images/quarterfinals-match-logo.png") no-repeat;
+}
+/* line 611, ../../../app/assets/styles/index.scss */
+section.fight .fight-comments#semifinals-comments .superfight-logo {
+  background: url("../images/semifinals-match-logo.png") no-repeat;
+}
+/* line 614, ../../../app/assets/styles/index.scss */
+section.fight .fight-comments#finals-comments .superfight-logo {
+  background: url("../images/finals-match-logo.png") no-repeat;
+}
+/* line 618, ../../../app/assets/styles/index.scss */
+section.fight .fight-comments iframe {
+  width: 286px;
+  height: 375px;
+  margin-left: 11px;
+  border: none;
+}
+/* line 626, ../../../app/assets/styles/index.scss */
+section.fight .vote-btn {
+  position: absolute;
+  bottom: 57px;
+  z-index: 10;
+  cursor: pointer;
+}
+/* line 632, ../../../app/assets/styles/index.scss */
+section.fight .vote-btn.vote1-btn {
+  left: -250px;
+}
+/* line 636, ../../../app/assets/styles/index.scss */
+section.fight .vote-btn.vote2-btn {
+  left: 800px;
+}
+/* line 640, ../../../app/assets/styles/index.scss */
+section.fight .vote-btn span {
+  width: 200px;
+  height: 64px;
+  display: block;
+  position: absolute;
+  bottom: -12px;
+  font-family: 'interstateregular';
+  text-align: left;
+  padding-left: 40px;
+  font-size: 44px;
+  color: #AC7713;
+  text-shadow: 1px -2px 6px black, 1px 1px 10px black;
+  background-image: url("../images/vote-sprite.png");
+  background-repeat: no-repeat;
+  background-position: right -64px;
+  padding-top: 16px;
+}
+/* line 659, ../../../app/assets/styles/index.scss */
+section.fight .vote-btn span.voted {
+  background-position: right 0px;
+}
+/* line 663, ../../../app/assets/styles/index.scss */
+section.fight .vote-btn span.winner {
+  width: 250px;
+  color: #184818;
+  text-shadow: 1px -2px 6px white, 1px 1px 10px white;
+  background: none;
+  text-align: center;
+  padding-left: 0px;
+}
+/* line 671, ../../../app/assets/styles/index.scss */
+section.fight .vote-btn span.loser {
+  width: 250px;
+  color: #811717;
+  text-shadow: 1px -2px 6px white, 1px 1px 10px white;
+  background: none;
+  text-align: center;
+  padding-left: 0px;
+}
+/* line 682, ../../../app/assets/styles/index.scss */
+section.fight .superfight-logo {
+  width: 243px;
+  height: 159px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+/* line 689, ../../../app/assets/styles/index.scss */
+section.fight ul.match-btns {
+  position: absolute;
+  bottom: 9px;
+  left: 44px;
+  margin: -47px auto 0px;
+  list-style-type: none;
+  padding: 0px;
+  width: 220px;
+}
+/* line 698, ../../../app/assets/styles/index.scss */
+section.fight ul.match-btns li {
+  float: left;
+  background: #000;
+  padding: 1px 3px;
+  margin: 2px 2px;
+  cursor: pointer;
+}
+/* line 705, ../../../app/assets/styles/index.scss */
+section.fight ul.match-btns li button {
+  width: 100px;
+  border: none;
+  background: none;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #5a5a5a;
+  font-weight: bold;
+}
+/* line 714, ../../../app/assets/styles/index.scss */
+section.fight ul.match-btns li button.active {
+  color: #769eb1;
+}
+/* line 721, ../../../app/assets/styles/index.scss */
+section.fight .viewbio-btn {
+  width: 104px;
+  height: 30px;
+  position: absolute;
+  top: 70px;
+  cursor: pointer;
+  padding-top: 8px;
+  font-family: 'interstateregular';
+  color: #ac7713;
+  font-size: 11px;
+}
+/* line 732, ../../../app/assets/styles/index.scss */
+section.fight .viewbio-btn.viewbio-btn-left {
+  background: url("../images/viewbio-btn-left.png") no-repeat;
+  left: -104px;
+}
+/* line 736, ../../../app/assets/styles/index.scss */
+section.fight .viewbio-btn.viewbio-btn-left span {
+  float: left;
+  margin-left: 10px;
+  text-align: left;
+}
+/* line 743, ../../../app/assets/styles/index.scss */
+section.fight .viewbio-btn.viewbio-btn-right {
+  background: url("../images/viewbio-btn-right.png") no-repeat;
+  right: -104px;
+}
+/* line 747, ../../../app/assets/styles/index.scss */
+section.fight .viewbio-btn.viewbio-btn-right span {
+  float: right;
+  margin-right: 10px;
+  text-align: right;
+}
+/* line 755, ../../../app/assets/styles/index.scss */
+section.fight .page-arrow {
+  visibility: hidden;
+  width: 26px;
+  height: 85px;
+  position: absolute;
+  top: 250px;
+  cursor: pointer;
+  z-index: 10;
+}
+/* line 764, ../../../app/assets/styles/index.scss */
+section.fight .page-arrow.page-arrow-left {
+  background: url("../images/page-arrow-left.png") no-repeat;
+  left: 5px;
+}
+/* line 769, ../../../app/assets/styles/index.scss */
+section.fight .page-arrow.page-arrow-right {
+  background: url("../images/page-arrow-right.png") no-repeat;
+  right: 5px;
+}
+
+/* line 781, ../../../app/assets/styles/index.scss */
+section.modal {
+  position: absolute;
+  width: 795px;
+  height: 650px;
+  padding-top: 40px;
+  background: #000;
+  background: black;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  opacity: 1;
+  /*-webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;*/
+  display: none;
+}
+/* line 797, ../../../app/assets/styles/index.scss */
+section.modal .modal-close-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 180px;
+  height: 37px;
+  background: transparent url(../images/vote-close-btn.png) 0 0 no-repeat;
+  cursor: pointer;
+  text-decoration: none;
+  padding-top: 11px;
+}
+/* line 808, ../../../app/assets/styles/index.scss */
+section.modal .modal-close-btn span {
+  font: normal 11px 'interstateregular';
+  color: #E9CF00;
+  background: -webkit-linear-gradient(#e9cf00, #b58400);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-left: 50px;
+}
+/* line 816, ../../../app/assets/styles/index.scss */
+section.modal .modal-close-btn span em {
+  font: normal 16px 'interstateregular';
+  color: #E9CF00;
+  background: -webkit-linear-gradient(#e9cf00, #b58400);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* line 826, ../../../app/assets/styles/index.scss */
+section.modal .vote-close {
+  right: 160px !important;
+  top: 108px !important;
+}
+
+/* line 840, ../../../app/assets/styles/index.scss */
+section.modal:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* line 845, ../../../app/assets/styles/index.scss */
+.vote-share-box {
+  width: 450px;
+  height: 360px;
+  margin: 100px auto;
+  position: relative;
+}
+/* line 851, ../../../app/assets/styles/index.scss */
+.vote-share-box .vote-box {
+  width: 449px;
+  height: 306px;
+  background: url("../images/vote-modal-bg.png") no-repeat;
+  position: absolute;
+  z-index: 10;
+}
+/* line 858, ../../../app/assets/styles/index.scss */
+.vote-share-box .vote-box h3 {
+  width: 394px;
+  height: 28px;
+  margin: 17px auto 0px;
+  font-size: 26px;
+  font-family: 'interstateregular';
+  text-align: center;
+  color: #AC7713;
+  background: -webkit-linear-gradient(#e9cf00, #b58400);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* line 872, ../../../app/assets/styles/index.scss */
+.vote-share-box .vote-box section.share-vote {
+  height: 125px;
+  max-height: 125px;
+  margin: 10px;
+}
+/* line 877, ../../../app/assets/styles/index.scss */
+.vote-share-box .vote-box section.share-vote .char-thumb {
+  float: left;
+  width: 173px;
+  height: 123px;
+  margin-right: 5px;
+}
+/* line 884, ../../../app/assets/styles/index.scss */
+.vote-share-box .vote-box section.share-vote .char-text {
+  float: left;
+  width: 245px;
+  text-align: center;
+  color: #80919c;
+  font-family: 'interstateregular';
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+/* line 894, ../../../app/assets/styles/index.scss */
+.vote-share-box .vote-box section.share-vote .char-share {
+  float: left;
+  width: 100px;
+  margin-left: 70px;
+}
+/* line 899, ../../../app/assets/styles/index.scss */
+.vote-share-box .vote-box section.share-vote .char-share span {
+  float: left;
+  width: 85px;
+  text-align: center;
+  color: #ffb400;
+}
+/* line 906, ../../../app/assets/styles/index.scss */
+.vote-share-box .vote-box section.share-vote .char-share .social-btn {
+  width: 35px;
+  height: 35px;
+  float: left;
+  margin-right: 10px;
+  cursor: pointer;
+  border: solid 1px #000;
+}
+/* line 914, ../../../app/assets/styles/index.scss */
+.vote-share-box .vote-box section.share-vote .char-share .social-btn.fb-btn {
+  background: url("../images/fb-btn.jpg");
+}
+/* line 917, ../../../app/assets/styles/index.scss */
+.vote-share-box .vote-box section.share-vote .char-share .social-btn.tw-btn {
+  background: url("../images/tw-btn.jpg");
+}
+/* line 920, ../../../app/assets/styles/index.scss */
+.vote-share-box .vote-box section.share-vote .char-share .social-btn:hover {
+  border: solid 1px #fff;
+}
+/* line 928, ../../../app/assets/styles/index.scss */
+.vote-share-box .vote-box section.vote-progress {
+  position: relative;
+  overflow: hidden;
+  height: 130px;
+  margin: 0px 9px 0 8px;
+}
+/* line 934, ../../../app/assets/styles/index.scss */
+.vote-share-box .vote-box section.vote-progress .vote-text1 {
+  font-family: 'interstateregular';
+  color: #80919c;
+  font-size: 11px;
+  text-align: center;
+  text-transform: uppercase;
+  height: 30px;
+}
+/* line 943, ../../../app/assets/styles/index.scss */
+.vote-share-box .vote-box section.vote-progress .vote-text2 {
+  font-family: 'interstateregular';
+  color: #7a7979;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* line 951, ../../../app/assets/styles/index.scss */
+.vote-share-box .vote-box section.vote-progress ul.button-bgs {
+  margin: -5px 0 0;
+}
+/* line 954, ../../../app/assets/styles/index.scss */
+.vote-share-box .vote-box section.vote-progress ul.button-bgs li {
+  position: absolute;
+  background-image: url("../images/match-vote-btn-bg.png");
+  background-repeat: no-repeat;
+  width: 319px;
+  height: 85px;
+  list-style-type: none;
+}
+/* line 962, ../../../app/assets/styles/index.scss */
+.vote-share-box .vote-box section.vote-progress ul.button-bgs li.voted {
+  background-position: 0 -84px;
+}
+/* line 966, ../../../app/assets/styles/index.scss */
+.vote-share-box .vote-box section.vote-progress ul.button-bgs li.not-voted {
+  background-position: 0 0;
+}
+/* line 970, ../../../app/assets/styles/index.scss */
+.vote-share-box .vote-box section.vote-progress ul.button-bgs li#button-0 {
+  left: -145px;
+}
+/* line 973, ../../../app/assets/styles/index.scss */
+.vote-share-box .vote-box section.vote-progress ul.button-bgs li#button-1 {
+  left: 38px;
+}
+/* line 976, ../../../app/assets/styles/index.scss */
+.vote-share-box .vote-box section.vote-progress ul.button-bgs li#button-2 {
+  left: 136px;
+}
+/* line 979, ../../../app/assets/styles/index.scss */
+.vote-share-box .vote-box section.vote-progress ul.button-bgs li#button-3 {
+  left: 232px;
+}
+/* line 985, ../../../app/assets/styles/index.scss */
+.vote-share-box .vote-box section.vote-progress ul.button-links {
+  list-style-type: none;
+  padding: 0px;
+  position: absolute;
+}
+/* line 990, ../../../app/assets/styles/index.scss */
+.vote-share-box .vote-box section.vote-progress ul.button-links li {
+  list-style-type: none;
+  float: left;
+  width: 75px;
+  height: 55px;
+  margin-right: 22px;
+  color: #000;
+  cursor: pointer;
+}
+/* line 999, ../../../app/assets/styles/index.scss */
+.vote-share-box .vote-box section.vote-progress ul.button-links li .ckbox {
+  width: 34px;
+  height: 37px;
+  background: url("../images/match-vote-checkbox.png") no-repeat;
+  background-position: 0 -37px;
+  margin-left: 10px;
+}
+/* line 1007, ../../../app/assets/styles/index.scss */
+.vote-share-box .vote-box section.vote-progress ul.button-links li span {
+  display: block;
+  margin-top: 2px;
+  text-align: center;
+  font-family: 'interstateregular';
+  font-size: 14px;
+  color: #ac7713;
+}
+/* line 1016, ../../../app/assets/styles/index.scss */
+.vote-share-box .vote-box section.vote-progress ul.button-links li.voted {
+  cursor: default;
+}
+/* line 1019, ../../../app/assets/styles/index.scss */
+.vote-share-box .vote-box section.vote-progress ul.button-links li.voted .ckbox {
+  background-position: 0 0;
+}
+/* line 1023, ../../../app/assets/styles/index.scss */
+.vote-share-box .vote-box section.vote-progress ul.button-links li.voted span {
+  color: #000;
+}
+/* line 1031, ../../../app/assets/styles/index.scss */
+.vote-share-box .vote-box section.vote-progress .reward-btn {
+  height: 85px;
+  width: 123px;
+  position: absolute;
+  bottom: 21px;
+  right: -20px;
+  background: url("../images/match-vote-btn-bg.png") no-repeat;
+}
+/* line 1039, ../../../app/assets/styles/index.scss */
+.vote-share-box .vote-box section.vote-progress .reward-btn.unlock {
+  background-position: 0 -84px;
+  cursor: pointer;
+}
+/* line 1044, ../../../app/assets/styles/index.scss */
+.vote-share-box .vote-box section.vote-progress .reward-btn.lock {
+  background-position: 0 0;
+}
+/* line 1048, ../../../app/assets/styles/index.scss */
+.vote-share-box .vote-box section.vote-progress .reward-btn img {
+  margin: 35px 61px;
+}
+/* line 1056, ../../../app/assets/styles/index.scss */
+.vote-share-box .preorder-tag {
+  width: 198px;
+  height: 94px;
+  background: url("../images/cta-tag-bg.png") no-repeat;
+  position: absolute;
+  top: 40px;
+  left: 250px;
+  z-index: 9;
+  cursor: pointer;
+}
+/* line 1066, ../../../app/assets/styles/index.scss */
+.vote-share-box .preorder-tag span {
+  display: block;
+  padding-top: 35px;
+  margin-left: 35px;
+  font-family: 'interstateregular';
+  font-size: 18px;
+  color: #000;
+}
+/* line 1076, ../../../app/assets/styles/index.scss */
+.vote-share-box .vote-end-box {
+  width: 449px;
+  height: 306px;
+  background: url("../images/vote-end-modal-bg.png") no-repeat;
+  position: absolute;
+  z-index: 10;
+}
+/* line 1083, ../../../app/assets/styles/index.scss */
+.vote-share-box .vote-end-box h3 {
+  width: 394px;
+  height: 28px;
+  margin: 75px auto 30px;
+  font-size: 20px;
+  font-family: 'interstateregular';
+  text-align: center;
+  color: #AC7713;
+}
+/* line 1093, ../../../app/assets/styles/index.scss */
+.vote-share-box .vote-end-box p {
+  font-size: 16px;
+  text-align: center;
+}
+
+/* line 1100, ../../../app/assets/styles/index.scss */
+footer#main-footer {
+  display: block;
+  width: 729px;
+  height: 142px;
+  margin: 0px auto;
+}
+/* line 1106, ../../../app/assets/styles/index.scss */
+footer#main-footer.loaded {
+  /*background: url('../images/footer-logo-garden.png') no-repeat;*/
+}
+/* line 1110, ../../../app/assets/styles/index.scss */
+footer#main-footer ul.logo-list {
+  height: 50px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  list-style-type: none;
+}
+/* line 1116, ../../../app/assets/styles/index.scss */
+footer#main-footer ul.logo-list li {
+  float: left;
+}
+/* line 1119, ../../../app/assets/styles/index.scss */
+footer#main-footer ul.logo-list li a {
+  background-image: url("../images/footer-logo-garden.png");
+  display: block;
+  width: 20px;
+  height: 50px;
+}
+/* line 1126, ../../../app/assets/styles/index.scss */
+footer#main-footer ul.logo-list li.footer-xbox360 {
+  margin-top: 14px;
+}
+/* line 1128, ../../../app/assets/styles/index.scss */
+footer#main-footer ul.logo-list li.footer-xbox360 a {
+  width: 99px;
+  height: 33px;
+  background-position: -65px -14px;
+}
+/* line 1134, ../../../app/assets/styles/index.scss */
+footer#main-footer ul.logo-list li.footer-xboxlive {
+  margin-right: 12px;
+  margin-top: 14px;
+}
+/* line 1137, ../../../app/assets/styles/index.scss */
+footer#main-footer ul.logo-list li.footer-xboxlive a {
+  width: 57px;
+  height: 33px;
+  background-position: -164px -14px;
+}
+/* line 1143, ../../../app/assets/styles/index.scss */
+footer#main-footer ul.logo-list li.footer-playstation {
+  margin-top: 14px;
+}
+/* line 1145, ../../../app/assets/styles/index.scss */
+footer#main-footer ul.logo-list li.footer-playstation a {
+  width: 29px;
+  height: 33px;
+  background-position: -233px -14px;
+}
+/* line 1151, ../../../app/assets/styles/index.scss */
+footer#main-footer ul.logo-list li.footer-ps3 {
+  margin-top: 14px;
+}
+/* line 1153, ../../../app/assets/styles/index.scss */
+footer#main-footer ul.logo-list li.footer-ps3 a {
+  width: 67px;
+  height: 33px;
+  background-position: -262px -14px;
+}
+/* line 1159, ../../../app/assets/styles/index.scss */
+footer#main-footer ul.logo-list li.footer-psn {
+  margin-right: 20px;
+  margin-top: 14px;
+}
+/* line 1162, ../../../app/assets/styles/index.scss */
+footer#main-footer ul.logo-list li.footer-psn a {
+  width: 36px;
+  height: 33px;
+  background-position: -329px -14px;
+}
+/* line 1168, ../../../app/assets/styles/index.scss */
+footer#main-footer ul.logo-list li.footer-wiiu {
+  margin-right: 14px;
+  margin-top: 14px;
+}
+/* line 1171, ../../../app/assets/styles/index.scss */
+footer#main-footer ul.logo-list li.footer-wiiu a {
+  width: 74px;
+  height: 33px;
+  background-position: -385px -14px;
+}
+/* line 1177, ../../../app/assets/styles/index.scss */
+footer#main-footer ul.logo-list li.footer-netherrealm {
+  margin-right: 25px;
+}
+/* line 1179, ../../../app/assets/styles/index.scss */
+footer#main-footer ul.logo-list li.footer-netherrealm a {
+  width: 52px;
+  height: 47px;
+  background-position: -473px 0px;
+}
+/* line 1185, ../../../app/assets/styles/index.scss */
+footer#main-footer ul.logo-list li.footer-dc {
+  margin-right: 26px;
+}
+/* line 1187, ../../../app/assets/styles/index.scss */
+footer#main-footer ul.logo-list li.footer-dc a {
+  width: 32px;
+  height: 47px;
+  background-position: -550px 0px;
+}
+/* line 1194, ../../../app/assets/styles/index.scss */
+footer#main-footer ul.logo-list li.footer-wb a {
+  width: 45px;
+  height: 47px;
+  background-position: -608px 0px;
+}
+/* line 1204, ../../../app/assets/styles/index.scss */
+footer#main-footer .footer-text {
+  font-size: 8px;
+  font-family: 'Myriad Pro', Arial;
+  margin-bottom: 7px;
+}
+/* line 1210, ../../../app/assets/styles/index.scss */
+footer#main-footer .wb-text {
+  font-size: 8px;
+  font-family: 'Myriad Pro', Arial;
+  float: left;
+  width: 500px;
+  margin-left: 70px;
+}
+/* line 1218, ../../../app/assets/styles/index.scss */
+footer#main-footer ul.logo-esrb-list {
+  list-style-type: none;
+}
+/* line 1221, ../../../app/assets/styles/index.scss */
+footer#main-footer ul.logo-esrb-list li {
+  float: left;
+}
+/* line 1224, ../../../app/assets/styles/index.scss */
+footer#main-footer ul.logo-esrb-list li a {
+  background-image: url("../images/footer-logo-garden.png");
+  display: block;
+  width: 20px;
+  height: 50px;
+}
+/* line 1231, ../../../app/assets/styles/index.scss */
+footer#main-footer ul.logo-esrb-list li.footer-esrb {
+  margin-right: 17px;
+}
+/* line 1233, ../../../app/assets/styles/index.scss */
+footer#main-footer ul.logo-esrb-list li.footer-esrb a {
+  width: 147px;
+  height: 63px;
+  background-position: 0 -93px;
+}
+/* line 1239, ../../../app/assets/styles/index.scss */
+footer#main-footer ul.logo-esrb-list li.footer-pegi {
+  margin-right: 18px;
+}
+/* line 1241, ../../../app/assets/styles/index.scss */
+footer#main-footer ul.logo-esrb-list li.footer-pegi a {
+  width: 51px;
+  height: 63px;
+  background-position: -164px -93px;
+}
+/* line 1248, ../../../app/assets/styles/index.scss */
+footer#main-footer ul.logo-esrb-list li.footer-usk a {
+  width: 62px;
+  height: 63px;
+  background-position: -233px -93px;
+}
+/* line 1257, ../../../app/assets/styles/index.scss */
+footer#main-footer ul.legal-links {
+  float: right;
+  list-style-type: none;
+}
+/* line 1261, ../../../app/assets/styles/index.scss */
+footer#main-footer ul.legal-links li {
+  float: left;
+  margin-left: 20px;
+}
+/* line 1265, ../../../app/assets/styles/index.scss */
+footer#main-footer ul.legal-links li a {
+  color: #fff;
+  font-size: 10px;
+  text-decoration: none;
+}
+/* line 1270, ../../../app/assets/styles/index.scss */
+footer#main-footer ul.legal-links li a:hover {
+  text-decoration: underline;
+}
+
+/* line 1279, ../../../app/assets/styles/index.scss */
+div.unified-amplet {
+  display: none;
+}
+
+/* line 1283, ../../../app/assets/styles/index.scss */
+img.omniture-img {
+  display: block;
+}

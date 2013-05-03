@@ -1,0 +1,16 @@
+{
+    "name": "SUPERMAN",
+    "bio_name": "Kal El",
+    "bio_race": "Kryptonian",
+    "bio_abilities": {
+    	"ability": [
+			"Super-speed, strength, stamina",
+			"Invulnerability",
+			"Freeze breath, heat vision, x-ray vision, super hearing and more",
+			"Flight"
+    		]
+    	},
+    "bio_url": "http:\/\/www.dccomics.com\/characters\/superman",
+    "bio_image_big": "https:\/\/s3-us-west-1.amazonaws.com\/injustice-cdn\/victorypage\/superman-big.png",
+    "bio_download": "https:\/\/s3-us-west-1.amazonaws.com\/injustice-cdn\/victorypage\/superman-en.jpg"
+}

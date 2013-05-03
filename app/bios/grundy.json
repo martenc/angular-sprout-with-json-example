@@ -1,0 +1,14 @@
+{
+    "name": "GRUNDY",
+    "bio_name": "Cyrus Gold",
+    "bio_race": "Zombie",
+    "bio_abilities": {
+    	"ability": [
+			"Super-strength",
+			"Resurrects upon death"
+    		]
+    	},
+    "bio_url": "http:\/\/www.dccomics.com\/characters\/solomon-grundy",
+    "bio_image_big": "https:\/\/s3-us-west-1.amazonaws.com\/injustice-cdn\/victorypage\/grundy-big.png",
+    "bio_download": "https:\/\/s3-us-west-1.amazonaws.com\/injustice-cdn\/victorypage\/grundy-en.jpg"
+}

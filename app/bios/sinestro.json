@@ -1,0 +1,14 @@
+{
+    "name": "SINESTRO",
+    "bio_name": "Thaal Sinestro",
+    "bio_race": "Korugarian",
+    "bio_abilities": {
+    	"ability": [
+			" Harnesses fear via his Power Ring to create anything his mind can conceive",
+			"Flight"
+    		]
+    	},
+    "bio_url": "http:\/\/www.dccomics.com\/characters\/sinestro",
+    "bio_image_big": "https:\/\/s3-us-west-1.amazonaws.com\/injustice-cdn\/victorypage\/sinestro-big.png",
+    "bio_download": "https:\/\/s3-us-west-1.amazonaws.com\/injustice-cdn\/victorypage\/sinestro-en.jpg"
+}

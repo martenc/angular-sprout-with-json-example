@@ -1,0 +1,15 @@
+{
+    "name": "BANE",
+    "bio_name": "Unknown",
+    "bio_race": "Human",
+    "bio_abilities": {
+    	"ability": [    
+			"Peak human physical condition",
+			"Venom enhances his physical abilities to superhuman levels",
+			"Expert strength"
+    		]
+    	},    
+    "bio_url": "http:\/\/www.dccomics.com\/characters\/bane",
+    "bio_image_big": "https:\/\/s3-us-west-1.amazonaws.com\/injustice-cdn\/victorypage\/bane-big.png",
+    "bio_download": "https:\/\/s3-us-west-1.amazonaws.com\/injustice-cdn\/victorypage\/bane-en.jpg"
+}

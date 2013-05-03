@@ -1,0 +1,14 @@
+{
+    "name": "JOKER",
+    "bio_name": "Unknown",
+    "bio_race": "Human",
+    "bio_abilities": {
+    	"ability": [
+			"Criminal genius",
+			"Possesses an arsenal of high-tech weapons and deadly gags"
+    		]
+    	},
+    "bio_url": "http:\/\/www.dccomics.com\/characters\/joker",
+    "bio_image_big": "https:\/\/s3-us-west-1.amazonaws.com\/injustice-cdn\/victorypage\/joker-big.png",
+    "bio_download": "https:\/\/s3-us-west-1.amazonaws.com\/injustice-cdn\/victorypage\/joker-en.jpg"
+}

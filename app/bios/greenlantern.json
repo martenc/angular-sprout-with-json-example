@@ -1,0 +1,14 @@
+{
+    "name": "GREEN LANTERN",
+    "bio_name": "Hal Jordan",
+    "bio_race": "Human",
+    "bio_abilities": {
+        "ability": [
+            "His Power Ring can do\/create anything he can imagine",
+            "Fierce, fearless fighter"
+            ]
+        },
+    "bio_url": "http:\/\/www.dccomics.com\/characters\/green-lantern",
+    "bio_image_big": "https:\/\/s3-us-west-1.amazonaws.com\/injustice-cdn\/victorypage\/greenlantern-big.png",
+    "bio_download": "https:\/\/s3-us-west-1.amazonaws.com\/injustice-cdn\/victorypage\/greenlantern-en.jpg"
+}

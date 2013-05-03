@@ -1,0 +1,16 @@
+{
+	"name": "BATMAN",
+    "bio_name": "Bruce Wayne",
+    "bio_race": "Human",
+    "bio_abilities": {
+    	"ability": [
+    		"Superior human strength, agility, athleticism",
+    		"Genius-level intellect, outstanding detective skills",
+    		"Proficient with high-tech equipment",
+    		"Skilled Martial artist"
+    		]
+    	},
+    "bio_url": "http:\/\/www.dccomics.com\/characters\/batman",
+    "bio_image_big": "https:\/\/s3-us-west-1.amazonaws.com\/injustice-cdn\/victorypage\/batman-big.png",
+    "bio_download": "https:\/\/s3-us-west-1.amazonaws.com\/injustice-cdn\/victorypage\/batman-en.jpg"
+}

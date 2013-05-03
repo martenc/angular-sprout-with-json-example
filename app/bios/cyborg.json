@@ -1,0 +1,15 @@
+{
+    "name": "CYBORG",
+    "bio_name": "Victor Stone",
+    "bio_race": "Human",
+    "bio_abilities": {
+    	"ability": [
+			"Super-human strength",
+			"Agility, athleticism, durability, intellect",
+			"Mechanical body parts include advanced sensors and weaponry"
+    		]
+    	},
+    "bio_url": "http:\/\/www.dccomics.com\/characters\/cyborg",
+    "bio_image_big": "https:\/\/s3-us-west-1.amazonaws.com\/injustice-cdn\/victorypage\/cyborg-big.png",
+    "bio_download": "https:\/\/s3-us-west-1.amazonaws.com\/injustice-cdn\/victorypage\/cyborg-en.jpg"
+}

@@ -1,0 +1,15 @@
+{
+	"name": "SHAZAM",
+    "bio_name": "Billy Batson",
+    "bio_race": "Human",
+    "bio_abilities": {
+    	"ability": [
+    		"Incredible wisdom, strength, stamina, power, courage, and speed",
+    		"Flies",
+    		"Controls lightning"
+    		]
+    	},
+    "bio_url": "http:\/\/www.dccomics.com\/characters\/shazam",
+    "bio_image_big": "https:\/\/s3-us-west-1.amazonaws.com\/injustice-cdn\/victorypage\/shazam-big.png",
+    "bio_download": "https:\/\/s3-us-west-1.amazonaws.com\/injustice-cdn\/victorypage\/shazam-en.jpg"
+}

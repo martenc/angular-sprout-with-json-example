@@ -1,0 +1,15 @@
+{
+    "name": "GREEN ARROW",
+    "bio_name": "Oliver Queen",
+    "bio_race": "Human",
+    "bio_abilities": {
+    	"ability": [
+            "Expert archer",
+			"Wide variety of customized arrows",
+			"Superior athlete, and martial artist"
+    		]
+    	},
+    "bio_url": "http:\/\/www.dccomics.com\/characters\/green-arrow",
+    "bio_image_big": "https:\/\/s3-us-west-1.amazonaws.com\/injustice-cdn\/victorypage\/greenarrow-big.png",
+    "bio_download": "https:\/\/s3-us-west-1.amazonaws.com\/injustice-cdn\/victorypage\/greenarrow-en.jpg"
+}

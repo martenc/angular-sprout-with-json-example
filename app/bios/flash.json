@@ -1,0 +1,14 @@
+{
+    "name": "FLASH",
+    "bio_name": "Barry Allen",
+    "bio_race": "Human",
+    "bio_abilities": {
+    	"ability": [    
+			"Able to tap into the Speed Force, giving him super-speed",
+			"Vibrates through solid matter, across dimensions, through time"
+    		]
+    	},
+    "bio_url": "http:\/\/www.dccomics.com\/characters\/the-flash",
+    "bio_image_big": "https:\/\/s3-us-west-1.amazonaws.com\/injustice-cdn\/victorypage\/flash-big.png",
+    "bio_download": "https:\/\/s3-us-west-1.amazonaws.com\/injustice-cdn\/victorypage\/flash-en.jpg"
+}

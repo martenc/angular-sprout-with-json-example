@@ -1,0 +1,1598 @@
+/**
+ * Dialog Styles
+ */
+
+body {
+    background-color: #000;
+    font: normal 12px 'Trebuchet MS';
+    color: #FFF;
+}
+
+a {
+    color: #FFF;
+}
+
+#dialog-wrapper .clear,
+.dialog-rewards-wrapper .clear {
+    display: block;
+    clear: both;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    letter-spacing: 0;
+}
+
+#dialog-wrapper .hidden,
+.dialog-rewards-wrapper .hidden {
+    display: none;
+}
+
+#dialog-wrapper .invisible,
+.dialog-rewards-wrapper .invisible {
+    visibility: hidden;
+}
+
+#dialog-wrapper .block,
+.dialog-rewards-wrapper .block {
+    display: block;
+}
+
+#dialog-wrapper p,
+#dialog-wrapper h1,
+.dialog-rewards-wrapper p,
+.dialog-rewards-wrapper h1 {
+    padding: 0;
+    margin: 0;
+}
+
+#dialog-wrapper a.dialog-close {
+    position: absolute;
+    top: -25px;
+    right: 8px;
+    display: block;
+    float: right;
+    width: 90px;
+    height: 37px;
+    background: transparent url(https://s3-us-west-1.amazonaws.com/injustice-cdn/victorypage/close.png) 0 0 no-repeat;
+    text-align: right;
+    line-height: 37px;
+    padding-right: 15px;
+    text-decoration: none;
+}
+
+#dialog-wrapper a.dialog-close span {
+    font: normal 11px interstateregular;
+    color: #E9CF00;
+    background: -webkit-linear-gradient(#E9CF00, #B58400);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#dialog-wrapper a.dialog-close span em {
+    font: normal 16px interstateregular;
+    color: #E9CF00;
+    background: -webkit-linear-gradient(#E9CF00, #B58400);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#dialog-wrapper {
+    /*width: 802px;
+    height: 547px;*/
+    position: relative;
+    width: 769px;
+    height: 506px;
+    padding: 18px 18px 23px 15px;
+    margin-top: 0px;
+    background: transparent url(https://s3-us-west-1.amazonaws.com/injustice-cdn/victorypage/back_popup.png) top left no-repeat;
+}
+
+    #dialog-wrapper .sprite {
+        background-color: transparent;
+        background-image: url(https://s3-us-west-1.amazonaws.com/injustice-cdn/victorypage/sprite_buttons.gif);
+        background-repeat: no-repeat;
+    }
+
+    #dialog-wrapper .dialog-main {
+        height: 370px;
+    }
+    
+        #dialog-wrapper .left-arrow,
+        #dialog-wrapper .right-arrow {
+            float: left;
+            width: 25px;
+            height: 215px;
+            padding-top: 155px;
+        }
+        
+        #dialog-wrapper .left-arrow {
+            padding-left: 9px;
+        }
+        
+        #dialog-wrapper .right-arrow {
+            padding-right: 9px;
+        }
+        
+            #dialog-wrapper .left-arrow a,
+            #dialog-wrapper .right-arrow a {
+                display: block;
+                width: 24px;
+                height: 83px;
+                background-color: transparent;
+                
+                background-position: 0 0;
+                background-repeat: no-repeat;
+            }
+            
+            #dialog-wrapper .left-arrow a {
+                background-image: url(../images/arrow_left.png);
+            }
+            
+            #dialog-wrapper .right-arrow a {
+                background-image: url(../images/arrow_right.png);
+            }
+            
+            #dialog-wrapper .dialog-slide-body {
+                float: left;
+                width: 690px;
+            }
+            
+            #dialog-wrapper .dialog-main-body {
+                width: 690px;
+                padding: 0 34px;
+            }
+            
+            #dialog-wrapper .dialog-flags-body {
+                width: 772px;
+                min-height: 450px;
+            }
+        
+        #dialog-wrapper .dialog-main .right-arrow {
+            float: right;
+        }
+        
+            #dialog-wrapper .dialog-main .left-arrow a {
+                
+            }
+    
+    /*Footer*/
+    #dialog-wrapper .dialog-footer {
+        width: 772px;
+        height: 111px;
+        background: transparent url(../images/back_buttons.png) 0 0 no-repeat;
+    }
+    
+    #dialog-wrapper ul.footer-menu {
+        padding: 0;
+        height: 110px;
+        list-style: none;
+    }
+    
+        #dialog-wrapper ul.footer-menu li {
+            display: inline;
+            float: left;
+            width: 153px;
+            padding-top: 5px;
+        }
+        
+        #dialog-wrapper .footer-menu li#ft-li-1 {
+            width: 150px;
+        }
+        
+        #dialog-wrapper .footer-menu li#ft-li-2 {
+            width: 165px;
+        }
+        
+        #dialog-wrapper .footer-menu li#ft-li-3 {
+            width: 163px;
+        }
+        
+        #dialog-wrapper .footer-menu li#ft-li-4 {
+            width: 165px;
+        }
+        
+        #dialog-wrapper .footer-menu li#ft-li-5 {
+            width: 90px;
+        }
+        
+        #dialog-wrapper .footer-menu li a {
+            display: block;
+            width: 90px;
+            height: 90px;
+        }
+        
+        .footer-menu #ft-link-1 {
+            background-position: 0 0;
+        }
+        
+        /*.footer-menu #ft-link-1:hover,*/
+        .footer-menu #ft-link-1-selected {
+            background-position: 0 -100px;
+        }
+        
+        .footer-menu #ft-link-2 {
+            background-position: -100px -3px;
+        }
+        
+        /*.footer-menu #ft-link-2:hover,*/
+        .footer-menu #ft-link-2-selected {
+            background-position: -100px -103px;
+        }
+        
+        .footer-menu #ft-link-3 {
+            background-position: -200px -3px;
+        }
+        
+        /*.footer-menu #ft-link-3:hover,*/
+        .footer-menu #ft-link-3-selected {
+            background-position: -200px -103px;
+        }
+        
+        .footer-menu #ft-link-4 {
+            background-position: -300px -5px;
+        }
+        
+        /*.footer-menu #ft-link-4:hover,*/
+        .footer-menu #ft-link-4-selected {
+            background-position: -300px -105px;
+        }
+        
+        .footer-menu #ft-link-5 {
+            background-position: -400px -3px;
+        }
+        
+        /*.footer-menu #ft-link-5:hover,*/
+        .footer-menu #ft-link-5-selected {
+            background-position: -400px -103px;
+        }
+        
+/*Slide 1*/
+    #slide-1 #slide1-col1 {
+        float: left;
+        padding: 55px 5px 0 10px;
+        width: 170px;
+        min-height: 145px;
+        background: transparent url(../images/gradient_line_vertical.png) right 30px no-repeat;
+    }
+    
+    #slide-1 #slide1-col2 {
+        float: left;
+        padding: 55px 10px 0 10px;
+        width: 235px;
+        min-height: 145px;
+        background: transparent url(../images/gradient_line_vertical.png) right 30px no-repeat;
+    }
+    
+    #slide-1 #slide1-col3{
+        float: left;
+        padding: 55px 0 0 8px;
+        width: 237px;
+    }
+    
+    
+    #slide-1 #slide1-col1 strong,
+    #slide-1 #slide1-col2 strong,
+    #slide-1 #slide1-col3 strong {
+        margin: -10px 0 0 0;
+        float: left;
+        font: normal 66px interstateregular;
+        color: #E9CF00;
+        background: -webkit-linear-gradient(#E9CF00, #B58400);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    #slide-1 #slide1-col1 span,
+    #slide-1 #slide1-col2 span,
+    #slide-1 #slide1-col3 span {
+        padding-top: 5px;
+        
+        /*text-shadow: 0px 1px 2px #000, 0px -2px 1px #333;*/
+    }
+    
+    #slide-1 .steps-page-copy {
+        color: #80919C;
+        margin-top: 35px;
+    }
+
+    .dialog-main .common-gray-text,
+    .dialog-flags-main .common-gray-text{
+        font: normal 15px interstateregular;
+        color: #80919C;
+        letter-spacing: -1px;
+    }
+    
+    #dialog-wrapper .main-gradient-text {
+        margin-bottom: 8px;
+        color: #E9CF00;
+        letter-spacing: -1px;
+        
+        background: -webkit-linear-gradient(#E9CF00, #B58400);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        
+        /*text-shadow: 3px 3px 2px #333;*/
+    }
+    
+    .dialog-main .dialog-main-txt,
+    .dialog-flags-main .dialog-main-txt {
+        font: normal 32px interstateregular;
+    }
+
+/*Slide 2*/
+.dialog-main .slide-bottom-links {
+    margin-top: 20px;
+    padding-top: 25px;
+    background: transparent url(../images/gradient_line_horizontal.png) top center no-repeat;
+}
+
+    .dialog-main .slide-bottom-links p {
+        margin-right: -15px;
+        font: normal 11px Helvetica;
+        color: #BBB;
+        text-align: right;
+    }
+    
+    .dialog-main .slide-bottom-links div {
+        margin-right: -15px;
+        padding-top: 22px;
+    }
+    
+        .dialog-main .slide-bottom-links div a {
+            float: right;
+            display: block;
+            width: 60px;
+            height: 19px;
+            margin-left: 83px;
+            background: transparent url(../images/arrow_down.png) top left no-repeat;
+        }
+
+
+/*Slide 3*/
+#slide-3 {
+    min-height: 280px;
+    background: transparent url(../images/avatar-theme-help.jpg) 170px 205px no-repeat;
+}
+
+/*Slide 4*/
+#slide-4 {
+    min-height: 280px;
+}
+
+/*Slide 5*/
+#slide-5 {
+    min-height: 280px;
+    background: transparent url(../images/rewards/heroes-reward.png) 245px 154px no-repeat;
+}
+
+.dialog-main .common-slide {
+    padding: 80px 0 0 43px;
+}
+
+/*Entry and like dialog panel*/
+#dialog-wrapper div.top-hline {
+    margin-top: 20px;
+    padding-top: 25px;
+    background: transparent url(../images/gradient_line_horizontal.png) top left no-repeat;
+}
+
+#dialog-wrapper .dialog-small-infotext {
+    font: normal 11px Helvetica;
+    color: #BBB;
+}
+
+
+/*Flags Page*/
+#dialog-wrapper .dialog-logo {
+    display: block;
+    width: 190px;
+    height: 60px;
+    margin: 20px auto 5px auto;
+}
+
+#dialog-wrapper .dialog-center-title {
+    padding: 18px 0 15px 0;
+    text-align: center;
+    background: transparent url(../images/gradient_line_horizontal_smaller.png) top center no-repeat;
+}
+
+    #dialog-wrapper .dialog-center-title span {
+        color: #E9CF00;
+        background: -webkit-linear-gradient(#E9CF00, #B58400);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    #dialog-wrapper .region-wrapper {
+        padding-top: 37px;
+        min-height: 300px;
+        background: transparent url(../images/back_choose_region.jpg) 0 0 no-repeat;
+    }
+    
+        #dialog-wrapper .region-wrapper .left-region {
+            float: left;
+            width: 240px;
+            text-align: right;
+        }
+        
+        #dialog-wrapper .region-wrapper .right-region {
+            float: right;
+            width: 270px;
+        }
+    
+    #dialog-wrapper .flags-list {
+        margin-top: 10px;
+        padding: 0 0 0 30px;
+        font: normal 11px Helvetica;
+        color: #BBB;
+    }
+    
+    #dialog-wrapper .flags-list div {
+        float: left;
+        width: 73px;
+    }
+    
+    #dialog-wrapper .flags-list .double {
+        width: 145px;
+    }
+    
+    #dialog-wrapper .flags-list span {
+        display: block;
+    }
+    
+    #dialog-wrapper .flags-list span.center-fix {
+        margin-left: -1px;
+    }
+    
+    #dialog-wrapper .flags-list img {
+        display: block;
+        float: left;
+        width: 57px;
+        height: 30px;
+        margin: 4px 14px 3px 0;
+    }
+    
+/* Injustice Backet Dialog */
+
+/*Common bracket Styles*/
+#dialog-wrapper .dialog-bracket-main .vs {
+    position: absolute;
+    display: block;
+    width: 26px;
+    height: 25px;
+    background: url(../images/bracket/vs.png) top left no-repeat;
+}
+
+#dialog-wrapper .dialog-bracket-main .logo {
+    position: absolute;
+    z-index: 200;
+    top: 25px;
+    left: 312px;
+}
+
+#dialog-wrapper .dialog-bracket-main {
+    width: 772px;
+    height: 510px;
+    background: transparent url(../images/bracket/bg-bracket.jpg) top center no-repeat;
+}
+
+    #dialog-wrapper .dialog-bracket-main div.bracket-cont {
+        /*padding: 10px 17px 0 17px;*/
+    }
+
+    #dialog-wrapper .dialog-bracket-main .left {
+        float: left;
+        text-align: center;
+    }
+    
+        #dialog-wrapper .dialog-bracket-main .first {
+            padding-top: 6px;
+            width: 115px;
+        }
+        
+        #dialog-wrapper .dialog-bracket-main .second {
+            padding-top: 31px; 
+            width: 105px;
+        }
+        
+        #dialog-wrapper .dialog-bracket-main .third {
+            padding-top: 90px;
+            width: 95px;
+        }
+    
+    #dialog-wrapper .dialog-bracket-main .right {
+        float: right;
+        text-align: center;
+    }
+    
+    #dialog-wrapper .dialog-bracket-main .left h3,
+    #dialog-wrapper .dialog-bracket-main .right h3,
+    #dialog-wrapper .dialog-bracket-main .type-final h3 {
+        padding: 0;
+        margin: 0;
+        font: normal 11px 'interstateregular';
+        color: #AC7713;
+        
+        background: -webkit-linear-gradient(#E9CF00, #B58400);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    #dialog-wrapper .dialog-bracket-main .type-final h3 {
+        font: normal 14px 'interstateregular';
+    }
+    
+    #dialog-wrapper .dialog-bracket-main .left h3.mid,
+    #dialog-wrapper .dialog-bracket-main .right h3.mid {
+        margin-top: 4px;
+    }
+    
+    /* Superfight */
+    #dialog-wrapper .dialog-bracket-main .type-superfight {
+        position: relative;
+        margin-top: -2px;
+        padding: 5px 0;
+        height: 110px;
+    }
+    
+        #dialog-wrapper .dialog-bracket-main .left .type-superfight .vs {
+            top: 45px;
+            right: 6px;
+        }
+        
+        #dialog-wrapper .dialog-bracket-main .right .type-superfight .vs {
+            top: 45px;
+            left: 5px;
+        }
+    
+        #dialog-wrapper .dialog-bracket-main .type-superfight img {
+            display: block;
+            width: 80px;
+            height: 53px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        
+        #dialog-wrapper .dialog-bracket-main .type-superfight .pictured {
+            width: 76px;
+            height: 49px;
+            border: 2px solid #C5A03E;
+        }
+        
+        #dialog-wrapper .dialog-bracket-main .type-superfight .first-img {
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+            -moz-border-radius-topleft: 3px;
+            -moz-border-radius-topright: 3px;
+            -webkit-border-top-left-radius: 3px;
+            -webkit-border-top-right-radius: 3px;
+        }
+        
+        #dialog-wrapper .dialog-bracket-main .type-superfight .last-pictured-img {
+            border-top: none;
+            border-bottom-left-radius: 3px;
+            border-bottom-right-radius: 3px;
+            -moz-border-radius-bottomleft: 3px;
+            -moz-border-radius-bottomright: 3px;
+            -webkit-border-bottom-left-radius: 3px;
+            -webkit-border-bottom-right-radius: 3px;
+        }
+        
+    /* Quaterfinals */
+    #dialog-wrapper .dialog-bracket-main .type-quaterfinal {
+        position: relative;
+        margin-top: -2px;
+        padding: 5px 0;
+        height: 165px;
+    }
+    
+    #dialog-wrapper .dialog-bracket-main .left .last-quaterfinal,
+    #dialog-wrapper .dialog-bracket-main .right .last-quaterfinal {
+        margin-top: 80px;
+    }
+    
+        #dialog-wrapper .dialog-bracket-main .type-quaterfinal .vs {
+            top: 77px;
+            left: 40px;
+        }
+    
+        #dialog-wrapper .dialog-bracket-main .type-quaterfinal img {
+            display: block;
+            width: 80px;
+            height: 53px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        
+        #dialog-wrapper .dialog-bracket-main .type-quaterfinal .pictured {
+            width: 76px;
+            height: 49px;
+            border: 2px solid #C5A03E;
+        }
+        
+        #dialog-wrapper .dialog-bracket-main .type-quaterfinal .first-img {
+            margin-bottom: 63px;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+            -moz-border-radius-topleft: 3px;
+            -moz-border-radius-topright: 3px;
+            -webkit-border-top-left-radius: 3px;
+            -webkit-border-top-right-radius: 3px;
+        }
+        
+        #dialog-wrapper .dialog-bracket-main .type-quaterfinal .pictured:last-child {
+            border-bottom-left-radius: 3px;
+            border-bottom-right-radius: 3px;
+            -moz-border-radius-bottomleft: 3px;
+            -moz-border-radius-bottomright: 3px;
+            -webkit-border-bottom-left-radius: 3px;
+            -webkit-border-bottom-right-radius: 3px;
+        }
+        
+    /* Semifinals */
+    #dialog-wrapper .dialog-bracket-main .type-semifinal {
+        position: relative;
+        margin-top: -2px;
+        padding: 5px 0;
+    }
+    
+        #dialog-wrapper .dialog-bracket-main .type-semifinal .vs {
+            top: 150px;
+            left: 40px;
+        }
+    
+        #dialog-wrapper .dialog-bracket-main .type-semifinal img {
+            display: block;
+            width: 80px;
+            height: 53px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        
+        #dialog-wrapper .dialog-bracket-main .type-semifinal .pictured {
+            width: 76px;
+            height: 49px;
+            border: 2px solid #C5A03E;
+        }
+        
+        #dialog-wrapper .dialog-bracket-main .type-semifinal .first-img {
+            margin-bottom: 203px;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+            -moz-border-radius-topleft: 3px;
+            -moz-border-radius-topright: 3px;
+            -webkit-border-top-left-radius: 3px;
+            -webkit-border-top-right-radius: 3px;
+        }
+        
+        #dialog-wrapper .dialog-bracket-main .type-semifinal .pictured:last-child {
+            border-bottom-left-radius: 3px;
+            border-bottom-right-radius: 3px;
+            -moz-border-radius-bottomleft: 3px;
+            -moz-border-radius-bottomright: 3px;
+            -webkit-border-bottom-left-radius: 3px;
+            -webkit-border-bottom-right-radius: 3px;
+        }
+        
+    /* FINAL */
+    #dialog-wrapper .dialog-bracket-main .type-final {
+        position: absolute;
+        top: 195px;
+        left: 321px;
+        height: 160px;
+        width: 165px;
+        z-index: 205;
+        text-align: center;
+    }
+    
+        #dialog-wrapper .dialog-bracket-main .type-final h3 {
+            margin-bottom: 6px;
+        }
+    
+        #dialog-wrapper .dialog-bracket-main .type-final .vs {
+            top: 74px;
+            left: 70px;
+        }
+    
+        #dialog-wrapper .dialog-bracket-main .type-final img {
+            float: left;
+            display: block;
+            width: 77px;
+            height: 123px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        
+        #dialog-wrapper .dialog-bracket-main .type-final .pictured {
+            width: 73px;
+            height: 119px;
+            border: 2px solid #C5A03E;
+            
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+            -moz-border-radius-topleft: 3px;
+            -moz-border-radius-topright: 3px;
+            -webkit-border-top-left-radius: 3px;
+            -webkit-border-top-right-radius: 3px;
+        }
+        
+        #dialog-wrapper .dialog-bracket-main .type-final .first-img {
+            float: right;
+            margin-bottom: 203px;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+            -moz-border-radius-topleft: 3px;
+            -moz-border-radius-topright: 3px;
+            -webkit-border-top-left-radius: 3px;
+            -webkit-border-top-right-radius: 3px;
+        }
+        
+    /* Bracket Footer */
+    #dialog-wrapper .dialog-bracket-main .bracket-footer {
+        position: absolute;
+        bottom: 35px;
+        left: 246px;
+        width: 321px;
+        height: 49px;
+        background: transparent url(https://s3-us-west-1.amazonaws.com/injustice-cdn/victorypage/bg-share.png) top left no-repeat;
+    }
+    
+        #dialog-wrapper .bracket-footer a.download {
+            position: relative;
+            float: left;
+            display: block;
+            width: 85px;
+            margin: 12px 0 0 32px;
+            padding-left: 33px;
+            
+            font: normal 11px 'interstateregular';
+            color: #AC7713;
+            text-decoration: none;
+            line-height: 110%;
+            
+            background: -webkit-linear-gradient(#E9CF00, #B58400);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        #dialog-wrapper .bracket-footer a.download span.arrow {
+            position: absolute;
+            top: 8px;
+            left: 1px;
+            display: block;
+            width: 25px;
+            height: 8px;
+            background: transparent url(https://s3-us-west-1.amazonaws.com/injustice-cdn/victorypage/download-arrow.png) 0 0 no-repeat;
+        }
+        
+        #dialog-wrapper .bracket-footer a.download span {
+            
+        }
+        
+        #dialog-wrapper .bracket-footer a.share {
+            float: left;
+            display: block;
+            width: 75px;
+            margin: 15px 0 0 10px;
+            font: normal 11px 'interstateregular';
+            color: #AC7713;
+            text-decoration: none;
+            
+            background: -webkit-linear-gradient(#E9CF00, #B58400);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+
+        #dialog-wrapper .bracket-footer a.tweet {
+            float: right;
+            display: block;
+            width: 75px;
+            margin: 15px 0 0 0;
+            font: normal 11px 'interstateregular';
+            color: #AC7713;
+            text-decoration: none;
+            
+            background: -webkit-linear-gradient(#E9CF00, #B58400);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        #dialog-wrapper .bracket-footer a.share img,
+        #dialog-wrapper .bracket-footer a.tweet img {
+            display: block;
+            margin: 0 auto;
+        }
+
+        #dialog-wrapper .bracket-footer .share-check-wrapper {
+            float: right;
+            width: 80px;
+            height: 35px;
+            margin: 11px 27px 0 0;
+        }
+        
+        #dialog-wrapper .bracket-footer .share-check-wrapper .fb-checkbox {
+            float: left;
+            width: 37px;
+            height: 25px;
+            background: transparent url(../images/bracket/facebook.png) center right no-repeat;
+            
+        }
+        
+        #dialog-wrapper .bracket-footer .share-check-wrapper .tw-checkbox {
+            float: left;
+            width: 37px;
+            height: 25px;
+            background: transparent url(../images/bracket/twitter.png) center right no-repeat;
+            
+        }
+        
+        #dialog-wrapper .bracket-footer .share-check-wrapper a {
+            display: block;
+            width: 18px;
+            height: 20px;
+            margin-top: 3px;
+            background: transparent url(../images/bracket/check-off.png) 0 0 no-repeat;
+        }
+        
+        #dialog-wrapper .bracket-footer .share-check-wrapper a.checked {
+            display: block;
+            width: 18px;
+            height: 20px;
+            margin-top: 3px;
+            background: transparent url(../images/bracket/check-on.png) 0 0 no-repeat;
+        }
+        
+/* Fighter Profile */
+/*Common profile Styles*/
+#dialog-wrapper .dialog-profile-main {
+    position: relative;
+    width: 772px;
+    height: 510px;
+    background: transparent url(https://s3-us-west-1.amazonaws.com/injustice-cdn/victorypage/bg-bio.png) 430px 0 no-repeat;
+}
+
+    #dialog-wrapper .dialog-profile-main div.profile-cont {
+        /*padding: 10px 17px 0 17px;*/
+    }
+    
+        #dialog-wrapper .dialog-profile-main h2.panel-title,
+        #dialog-wrapper .dialog-profile-main img.panel-title {
+            position: absolute;
+            top: 10px;
+            left: 27px;
+            padding: 0;
+            margin: 0;
+            text-indent: -500px;
+            overflow: hidden;
+            width: 713px;
+            height: 78px;
+            background: transparent url(https://s3-us-west-1.amazonaws.com/injustice-cdn/victorypage/fighter-profile.png) top center no-repeat;
+            z-index: 203;
+        }
+        #dialog-wrapper .dialog-profile-main img.panel-title {
+            display: none;
+        }
+
+        #dialog-wrapper .dialog-profile-main .profile-img {
+            position: absolute;
+            top: -1px;
+            left: 0;
+            display: block;
+            width: 550px;
+            height: 515px;
+            z-index: 204;
+        }
+        
+        #dialog-wrapper .dialog-profile-main .profile-info-wrapper {
+            position: relative;
+            float: right;
+            width: 400px;
+            padding-top: 90px;
+            z-index: 207;
+        }
+        
+            #dialog-wrapper .profile-info-wrapper .bane-info {
+                height: 128px;
+                margin: 0 0 7px 75px;
+                background: transparent url(https://s3-us-west-1.amazonaws.com/injustice-cdn/victorypage/line-separator.png) center bottom no-repeat;
+            }
+            
+                #dialog-wrapper .profile-info-wrapper .bane-info p {
+                    margin-left: 2px;
+                    padding-top: 3px;
+                    padding-right: 20px;
+                    padding-bottom: 7px;
+                    font: normal 11px Helvetica, Arial, sans-serif;
+                    color: #DAD8D8;
+                }
+                
+                    #dialog-wrapper .profile-info-wrapper .bane-info p span {
+                        color: #8d8d8d
+                    }
+            
+            #dialog-wrapper .profile-info-wrapper .bane-info h3,
+            #dialog-wrapper .profile-info-wrapper .abilities-info h3 {
+                margin: 0;
+                padding: 0 0 3px 0;
+                font: normal 21px 'interstateregular';
+                color: #80919C;
+            }
+            
+            #dialog-wrapper .profile-info-wrapper .abilities-info h3 {
+                padding: 0 0 2px 0;
+            }
+            
+            #dialog-wrapper .profile-info-wrapper .abilities-info {
+                height: 207px;
+                margin: 0 0 8px 75px;
+                background: transparent url(https://s3-us-west-1.amazonaws.com/injustice-cdn/victorypage/line-separator.png) center bottom no-repeat;
+            }
+            
+                #dialog-wrapper .profile-info-wrapper .abilities-info ul {
+                    margin: 0 0 0 20px;
+                    padding: 0;
+                    width: 245px;
+                }
+                
+                #dialog-wrapper .profile-info-wrapper .abilities-info ul li {
+                    padding: 7px 0;
+                    font: normal 11px/15px Helvetica, Arial, sans-serif;
+                    color: #80919c;
+                }
+                
+                #dialog-wrapper .profile-info-wrapper .abilities-info ul li span {
+                    color: #8d8d8d;
+                }
+                
+            #dialog-wrapper .profile-info-wrapper .more-info-wrapper {
+                margin-left: 75px;
+                font: normal 11px/14px Helvetica, Arial, sans-serif;
+                color: #DAD8D8;
+                height: 20px;
+            }
+            
+            #dialog-wrapper .profile-info-wrapper .more-info-wrapper a {
+                font: normal 11px/14px Helvetica, Arial, sans-serif;
+                text-decoration: none;
+                color: #8D8D8D;
+            }
+            
+            #dialog-wrapper .profile-info-wrapper .more-info-wrapper a:hover {
+                color: #FFF;
+                text-decoration: underline;
+            }
+        
+        #dialog-wrapper .dialog-profile-main .bracket-footer {
+            width: 400px;
+            height: 57px;
+            background: transparent url(https://s3-us-west-1.amazonaws.com/injustice-cdn/victorypage/bg-share.png) top left no-repeat;
+        }
+        
+            #dialog-wrapper .dialog-profile-main .bracket-footer a.download {
+                margin: 16px 0 0 64px;
+            }
+            
+            #dialog-wrapper .dialog-profile-main .bracket-footer a.download span {
+                
+            }
+            
+            #dialog-wrapper .dialog-profile-main .bracket-footer .share-check-wrapper {
+                margin: 13px 35px 0 0;
+            }
+            
+            #dialog-wrapper .dialog-profile-main .bracket-footer .share {
+                width: 65px;
+                margin: 16px 9px 0 25px;
+            }
+            
+/* Rewards Popup */
+.dialog-rewards-wrapper {
+    /*width: 802px;
+    height: 547px;*/
+    position: relative;
+    width: 769px;
+    height: 601px;
+    padding: 18px 18px 23px 16px;
+    margin-top: -30px;
+    background: transparent url(../images/rewards/bg-rewards.png) top left no-repeat;
+}
+
+    .dialog-rewards-wrapper .dialog-main {
+    }
+        
+        .dialog-rewards-wrapper .dialog-header {
+            position: relative;
+            height: 48px;
+            background: transparent url(../images/rewards/bg-header.png) top right no-repeat;
+        }
+        
+            .dialog-rewards-wrapper .dialog-header .dialog-title {
+                float: left;
+                width: 325px;
+                font: normal 31px/48px interstateregular;
+                text-align: center;
+                color: #AC7713;
+                
+                background: -webkit-linear-gradient(#E9CF00, #B58400);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            
+            .dialog-rewards-wrapper .user-info {
+                float: right;
+                width: 152px;
+                overflow: hidden;
+            }
+            
+                .dialog-rewards-wrapper .user-info img {
+                    float: left;
+                    width: 31px;
+                    height: 31px;
+                    margin: 7px 5px 0 9px;
+                    border: 1px solid #80919C;
+                }
+                
+                .dialog-rewards-wrapper .user-info p,
+                .dialog-rewards-wrapper .user-info a,
+                .dialog-rewards-wrapper .user-info span {
+                    font: normal 11px/48px Helvetica, Arial, sans-serif;
+                    color: #FFF;
+                    white-space: nowrap;
+                    text-decoration: none;
+                }
+                
+                .dialog-rewards-wrapper .user-info a:hover {
+                    text-decoration: underline;
+                }
+                
+            .dialog-rewards-wrapper .preorder {
+                float: right;
+                display: block;
+                width: 197px;
+                height: 48px;
+                font: normal 12px/48px interstateregular;
+                color: #777;
+                text-align: center;
+                text-decoration: none;
+                background: transparent url(../images/rewards/but-preorder-top.png) 0 -50px no-repeat;
+            }
+            
+            .dialog-rewards-wrapper .preorder.on,
+            .dialog-rewards-wrapper .preorder:hover {
+                color: #000;
+                background-position: 0 0;
+            }
+            
+            .dialog-rewards-wrapper a.dialog-close {
+                display: block;
+                float: right;
+                width: 85px;
+                text-align: right;
+                line-height: 48px;
+                padding-right: 6px;
+                text-decoration: none;
+            }
+            
+            .dialog-rewards-wrapper a.dialog-close span {
+                font: normal 11px interstateregular;
+                color: #E9CF00;
+                background: -webkit-linear-gradient(#E9CF00, #B58400);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            
+            .dialog-rewards-wrapper a.dialog-close span em {
+                font: normal 16px interstateregular;
+                color: #E9CF00;
+                background: -webkit-linear-gradient(#E9CF00, #B58400);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            
+        .dialog-rewards-wrapper .dialog-main {
+            height: 407px;
+        }
+        
+        .dialog-rewards-wrapper .avatar-check-wrapper {
+            height: 79px;
+            background: transparent url(../images/rewards/menu-top.jpg) 0 0 no-repeat;
+        }
+        
+        .dialog-rewards-wrapper .avatar-check-0,
+        .dialog-rewards-wrapper .avatar-on-0 {
+            background-position: 0 -83px;
+        }
+        
+        .dialog-rewards-wrapper .avatar-check-1,
+        .dialog-rewards-wrapper .avatar-on-1 {
+            background-position: 0 -166px;
+        }
+        
+            .dialog-rewards-wrapper .avatar-check-wrapper a {
+                float: left;
+                display: block;
+                height: 79px;
+                background-color: transparent;
+                background-image: url(../images/rewards/check-off-big.png);
+                background-position: 270px 13px;
+                background-repeat: no-repeat;
+                
+                font: normal 18px/79px interstateregular;
+                color: #AC7713;
+                text-decoration: none;
+            }
+            
+                .dialog-rewards-wrapper .avatar-check-wrapper a span {
+                    background: -webkit-linear-gradient(#E9CF00, #B58400);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            
+            .dialog-rewards-wrapper .avatar-check-wrapper a.first {
+                padding-left: 90px;
+                width: 294px;
+            }
+            
+            .dialog-rewards-wrapper .avatar-check-wrapper a.last {
+                float: right;
+                padding-left: 60px;
+                margin-right: 30px;
+                width: 264px;
+                background-position: 240px 13px;
+            }
+            
+            .dialog-rewards-wrapper .avatar-check-wrapper a.selected {
+                background-image: url(../images/rewards/check-on-big.png);
+            }
+            
+            .dialog-rewards-wrapper .avatar-check-0 a.first,
+            .dialog-rewards-wrapper .avatar-check-1 a.last,
+            .dialog-rewards-wrapper .avatar-on-0 a.first,
+            .dialog-rewards-wrapper .avatar-on-1 a.last, {
+                color: #000;
+            }
+            
+            .dialog-rewards-wrapper .avatar-check-0 a.first span,
+            .dialog-rewards-wrapper .avatar-check-1 a.last span,
+            .dialog-rewards-wrapper .avatar-on-0 a.first span,
+            .dialog-rewards-wrapper .avatar-on-1 a.last span {
+                color: #000;
+                -webkit-text-fill-color: #000;
+            }
+        
+        .dialog-rewards-wrapper .weekly-giveaways-wrapper {
+            height: 75px;
+        }
+        
+            .dialog-rewards-wrapper .weekly-giveaways-wrapper p {
+                padding: 2px 5px;
+                height: 16px;
+                font: normal 12px/16px interstateregular;
+                color: #80919C;
+            }
+            
+            .dialog-rewards-wrapper .weekly-giveaways-wrapper .give-steps-wrapper {
+                height: 50px;
+                background: transparent url(../images/rewards/menu-bottom.jpg) 0 0 no-repeat;
+            }
+            
+            .dialog-rewards-wrapper .give-steps-wrapper ul {
+                padding: 0;
+                margin: 0;
+                height: 50px;
+                list-style: none;
+            }
+            
+                .dialog-rewards-wrapper .give-steps-wrapper li {
+                    display: inline;
+                    float: left;
+                    padding-top: 5px;
+                    text-align: center;
+                }
+                
+
+                .dialog-rewards-wrapper .give-steps-wrapper li.upcoming a span {
+                    color: #ccc;
+                }
+
+
+                .dialog-rewards-wrapper .give-steps-wrapper li.itm-0 {
+                    width: 85px;
+                }
+                
+                .dialog-rewards-wrapper .give-steps-wrapper li.itm-1 {
+                    width: 125px;
+                }
+                
+                .dialog-rewards-wrapper .give-steps-wrapper li.itm-2 {
+                    width: 125px;
+                }
+                
+                .dialog-rewards-wrapper .give-steps-wrapper li.itm-3 {
+                    width: 125px;
+                }
+                
+                .dialog-rewards-wrapper .give-steps-wrapper li.itm-4 {
+                    width: 125px;
+                }
+                
+                .dialog-rewards-wrapper .give-steps-wrapper li.itm-5 {
+                    width: 118px;
+                }
+                
+                .dialog-rewards-wrapper .give-steps-wrapper li.itm-6 {
+                    text-align: right;
+                    float: right;
+                    width: 60px;
+                }
+                
+                .dialog-rewards-wrapper .give-steps-wrapper li a {
+                    display: block;
+                    height: 35px;
+                    padding: 4px 0 0 0;
+                    text-align: center;
+                    text-decoration: none;
+                    letter-spacing: -1px;
+                    font: normal 11px interstateregular;
+                    background: transparent url(../images/rewards/check-off-mid.png) 40% bottom no-repeat;
+                    color: #AC7713;
+                }
+
+                .dialog-rewards-wrapper .give-steps-wrapper li.upcoming a {
+                    cursor: not-allowed !important;
+                    background: none;
+                }
+                
+                    .dialog-rewards-wrapper .give-steps-wrapper li.expired a span,
+                    .dialog-rewards-wrapper .give-steps-wrapper li.active a span {
+                        background: -webkit-linear-gradient(#E9CF00, #B58400);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+                    
+                    .dialog-rewards-wrapper .give-steps-wrapper li.itm-6 a {
+                        text-align: right;
+                        padding-right: 7px;
+                    }
+                    
+                .dialog-rewards-wrapper .give-steps-wrapper li a.selected {
+                    background: transparent url(../images/rewards/check-on-mid.png) 40% bottom no-repeat;
+                }
+                
+                /*.dialog-rewards-wrapper .give-steps-wrapper li a:hover span {
+                    color: #000;
+                    -webkit-text-fill-color: #000;
+                }*/
+
+                .dialog-rewards-wrapper .give-tab-0 .itm-0 span,
+                .dialog-rewards-wrapper .give-tab-1 .itm-1 span,
+                .dialog-rewards-wrapper .give-tab-2 .itm-2 span,
+                .dialog-rewards-wrapper .give-tab-3 .itm-3 span,
+                .dialog-rewards-wrapper .give-tab-4 .itm-4 span,
+                .dialog-rewards-wrapper .give-tab-5 .itm-5 span,
+                .dialog-rewards-wrapper .give-tab-6 .itm-6 span {
+                    color: #000 !important;
+                    -webkit-text-fill-color: #000 !important;
+                }
+                
+                .dialog-rewards-wrapper .weekly-giveaways-wrapper .give-tab-0 {
+                    background-position: 0 -51px;
+                }
+                
+                .dialog-rewards-wrapper .weekly-giveaways-wrapper .give-tab-1 {
+                    background-position: 0 -102px;
+                }
+                
+                .dialog-rewards-wrapper .weekly-giveaways-wrapper .give-tab-2 {
+                    background-position: 0 -153px;
+                }
+                
+                .dialog-rewards-wrapper .weekly-giveaways-wrapper .give-tab-3 {
+                    background-position: 0 -204px;
+                }
+                
+                .dialog-rewards-wrapper .weekly-giveaways-wrapper .give-tab-4 {
+                    background-position: 0 -255px;
+                }
+                
+                .dialog-rewards-wrapper .weekly-giveaways-wrapper .give-tab-5 {
+                    background-position: 0 -306px;
+                }
+                
+                .dialog-rewards-wrapper .weekly-giveaways-wrapper .give-tab-6 {
+                    background-position: 0 -357px;
+                }
+                
+        .dialog-rewards-wrapper .dialog-main {
+            
+        }
+        
+            .dialog-rewards-wrapper .dialog-main .reward-prev-1  {
+                
+            }
+        
+            .dialog-rewards-wrapper .dialog-main .left {
+                float: left;
+                width: 400px;
+                height: 407px;
+            }
+
+            .dialog-rewards-wrapper .dialog-main .left p {
+                font-size: 11px;
+                padding: 10px;
+                color: #80919C;
+            }
+            
+            /* REWARDS PREVIEW 1 */
+                .dialog-rewards-wrapper .dialog-main .reward-prev-1 .left img  {
+                    display: block;
+                    width: 323px;
+                    height: 288px;
+                    margin: 10px auto 5px auto;
+                }
+                
+                .dialog-rewards-wrapper .reward-prev-1 .left a.preorder-link {
+                    display: block;
+                    float: left;
+                    width: 364px;
+                    height: 71px;
+                    text-decoration: none;
+                    text-align: center;
+                    background: transparent url(../images/rewards/but-preorder.png) top left no-repeat;
+                }
+                
+                    .dialog-rewards-wrapper .reward-prev-1 .left a.preorder-link span {
+                        font: normal 22px/71px interstateregular;
+                        color: #AC7713;
+                        background: -webkit-linear-gradient(#E9CF00, #B58400);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+                    
+                    .dialog-rewards-wrapper .reward-prev-1 .left p {
+                        clear: both;
+                        padding-left: 60px;
+                        font: normal 8px/20px Verdana;
+                        color: #6E6E6E;
+                        text-decoration: underline;
+                    }
+                    
+                    .dialog-rewards-wrapper .reward-prev-1 .left p a {
+                        font: normal 8px Verdana;
+                        color: #D7B51D;
+                    }
+            
+            .dialog-rewards-wrapper .dialog-main .reward-prev-1 .right {
+                float: left;
+                width: 310px;
+                height: 407px;
+                padding: 0 30px 0 20px;
+                background: transparent url(../images/rewards/heroes-reward.png) -3px bottom no-repeat;
+            }
+
+                .dialog-rewards-wrapper .dialog-main .right h2 {
+                    margin: 0;
+                    padding: 2px 0 3px 0;
+                    font: normal 18px interstateregular;
+                    color: #AC7713;
+                    background: -webkit-linear-gradient(#E9CF00, #B58400);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+                
+                    .dialog-rewards-wrapper .dialog-main .right h2 span {
+                        display: block;
+                        text-align: center;
+                    }
+                    
+                    .dialog-rewards-wrapper .dialog-main .right h2 span.second {
+                        font: normal 15px interstateregular;
+                    }
+                    
+                .dialog-rewards-wrapper .dialog-main .right h3 {
+                    margin: 0;
+                    padding: 6px 0 3px 0;
+                    font: normal 15px interstateregular;
+                    color: #80919C;
+                    background: transparent url(https://s3-us-west-1.amazonaws.com/injustice-cdn/victorypage/line-separator.png) top center no-repeat;
+                }
+                
+                .dialog-rewards-wrapper .dialog-main .right p {
+                    font: normal 11px/13px Helvetica, Arial, sans-serif;
+                    color: #BBB;
+                }
+                
+                .dialog-rewards-wrapper .dialog-main .right a.terms {
+                    font: normal 8px Verdana;
+                    color: #6E6E6E;
+                    text-decoration: underline;
+                }
+                
+            /* REWARDS PREVIEW 2 */
+            /*.dialog-rewards-wrapper .dialog-main .reward-prev-2 .left img,
+            .dialog-rewards-wrapper .dialog-main .reward-prev-3 .left img,
+            .dialog-rewards-wrapper .dialog-main .reward-prev-4 .left img,
+            .dialog-rewards-wrapper .dialog-main .reward-prev-5 .left img{
+                display: block;
+                width: 235px;
+                height: 330px;
+                margin: 65px auto 0 auto;*/
+            }
+            
+            .dialog-rewards-wrapper .dialog-main .reward-prev-2 .right {
+                float: left;
+                width: 310px;
+                height: 357px;
+                padding: 45px 30px 0 20px;
+            }
+            
+                .dialog-rewards-wrapper .dialog-main .reward-prev-2 .right h3 {
+                    padding: 23px 0 3px 0;
+                    background-position: center 10px;
+                }
+                
+                .dialog-rewards-wrapper .dialog-main .reward-prev-2 .right p {
+                    height: 95px;
+                }
+                
+                .dialog-rewards-wrapper .dialog-main .right a.submit-btn,
+                .dialog-rewards-wrapper .dialog-main .right a.vote-to-qualify-btn {
+                    display: block;
+                    width: 300px;
+                    height: 71px;
+                    padding-left: 60px;
+                    margin-left: -13px;
+                    font: normal 22px/71px interstateregular;
+                    color: #AC7713;
+                    text-decoration: none;
+                    background: transparent url(../images/rewards/but-submit.png) top left no-repeat;
+                }
+                
+                .dialog-rewards-wrapper .dialog-main .right a.submit-btn span,
+                .dialog-rewards-wrapper .dialog-main .right a.vote-to-qualify-btn span {
+                    background: -webkit-linear-gradient(#E9CF00, #B58400);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+                
+        /*REWARDS PREVIEW 3*/
+            .dialog-rewards-wrapper .dialog-main .right {
+                float: left;
+                width: 310px;
+                height: 368px;
+                padding: 15px 30px 0 20px;
+            }
+            
+                .dialog-rewards-wrapper .dialog-main .right h3 {
+                    padding: 10px 0 4px 0;
+                    background-position: center 1px;
+                }
+                
+                .dialog-rewards-wrapper .dialog-main .right p {
+                    font: normal 12px Helvetica, Arial, sans-serif; 
+                    padding-bottom: 7px;
+                }
+                
+                .dialog-rewards-wrapper .dialog-main p.tiny {
+                    font: normal 9px/10px Verdana;
+                    color: #6E6E6E;
+                    letter-spacing: -0.5px;
+                }
+                
+                .dialog-rewards-wrapper .dialog-main p.tiny a:hover {
+                    color: #AC7713;
+                }
+
+                .dialog-rewards-wrapper .dialog-main input {
+                    margin: 2px 0 3px 0;
+                    border: 1px solid #6F7171;
+                    background-color: #FFF;
+                    height: 22px;
+                    padding: 0 5px;
+                    font: normal 11px Helvetica, Arial, sans-serif;
+                    color: #8D8D8D;
+                }
+                
+                .dialog-rewards-wrapper .dialog-main input.small-input {
+                    margin-right: 2px;
+                    width: 138px;
+                }
+                
+                .dialog-rewards-wrapper .dialog-main input.large-input {
+                    width: 294px;
+                }
+                
+                .dialog-rewards-wrapper .dialog-main .right div.terms-check {
+                    margin: 10px 0 3px 0;
+                    font: normal 11px Helvetica, Arial, sans-serif;
+                    color: #80919C;
+                }
+                
+                .dialog-rewards-wrapper .dialog-main .terms-check a {
+                    font: normal 11px Helvetica, Arial, sans-serif;
+                    color: #797979;
+                    text-decoration: underline;
+                }
+                
+                /* Fake checkbox */
+                .dialog-rewards-wrapper .dialog-main .fake-check {
+                    display: block;
+                    float: left;
+                    width: 18px;
+                    height: 20px;
+                    margin-top: -5px;
+                    background: transparent url(../images/bracket/check-off.png) 0 0 no-repeat;
+                }
+                
+                .dialog-rewards-wrapper .dialog-main .reward-prev-3 a.checked {
+                    background: transparent url(../images/bracket/check-on.png) 0 0 no-repeat;
+                }
+
+
+
+        /*REWARDS PREVIEW 4*/
+            .dialog-rewards-wrapper .dialog-main .reward-prev-4 .has-liked,
+            .dialog-rewards-wrapper .dialog-main .reward-prev-4 .has-not-liked,
+            .dialog-rewards-wrapper .dialog-main .reward-prev-4 .has-submitted,
+            .dialog-rewards-wrapper .dialog-main .reward-prev-5 .has-voted,
+            .dialog-rewards-wrapper .dialog-main .reward-prev-5 .has-not-voted,
+            .dialog-rewards-wrapper .dialog-main .reward-prev-5 .has-submitted {
+                display: none;
+            }
+
+            .dialog-rewards-wrapper .dialog-main .reward-prev-4 .right,
+            .dialog-rewards-wrapper .dialog-main .reward-prev-5 .right {
+                float: left;
+                width: 310px;
+                height: 407px;
+                padding: 0 30px 0 20px;
+            }
+
+            .dialog-rewards-wrapper .dialog-main .reward-prev-5 h4 {
+                margin: 7px 0px;
+                color: #80919C;
+            }
+
+
+            .dialog-rewards-wrapper .dialog-main .step ul {
+                margin: 0;
+            }
+
+            .dialog-rewards-wrapper .dialog-main .reward-prev-4 .step ul li,
+            .dialog-rewards-wrapper .dialog-main .reward-prev-5 .step ul li {
+                list-style-type: none;
+                margin-bottom: 3px;
+            }
+
+            .dialog-rewards-wrapper .dialog-main .reward-prev-4 .step.hidden,
+            .dialog-rewards-wrapper .dialog-main .reward-prev-5 .step.hidden {
+                display: none;
+            }
+
+
+            .dialog-rewards-wrapper .dialog-main .reward-prev-5 .step1 .start-redeem-dlc {
+                text-decoration: underline;
+                color: #fff;
+                cursor: pointer;
+            }
+
+            .dialog-rewards-wrapper .dialog-main .reward-prev-5 .step1b {
+                margin-bottom: 10px;
+            }
+
+            .dialog-rewards-wrapper .dialog-main .reward-prev-5 .step2,
+            .dialog-rewards-wrapper .dialog-main .reward-prev-5 .step3a-psn {
+                width: 150px;
+                float: left;
+            }
+
+            .dialog-rewards-wrapper .dialog-main .reward-prev-5 .step4 {
+                clear: both;
+            }
+
+
+
+
+
+

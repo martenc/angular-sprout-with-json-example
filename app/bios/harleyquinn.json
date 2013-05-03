@@ -1,0 +1,16 @@
+{
+    "name": "HARLEY QUINN",
+    "bio_name": "Dr. Harleen Quinzel",
+    "bio_race": "Human",
+    "bio_abilities": {
+    	"ability": [
+			"Immune to most poisons",
+			"Above-average intelligence ",
+			"Fighting skills.",
+			"Acrobatics"
+    		]
+    	},
+    "bio_url": "http:\/\/www.dccomics.com\/characters\/harley-quinn",
+    "bio_image_big": "https:\/\/s3-us-west-1.amazonaws.com\/injustice-cdn\/victorypage\/harley-big.png",
+    "bio_download": "https:\/\/s3-us-west-1.amazonaws.com\/injustice-cdn\/victorypage\/harley-en.jpg"
+}
