@@ -1,5 +1,8 @@
 # Angular sprout project using a json driven partial — similar to the phonecat project, but based on a 1.0.6 angular-seed
 
+Working example here:
+http://angular-sprout.aws.af.cm/index.html
+
 Based on the application skeleton for a typical [AngularJS](http://angularjs.org/) web app.
 It contains AngularJS libraries, test libraries and a bunch of scripts all preconfigured for
 instant web development gratification. 
